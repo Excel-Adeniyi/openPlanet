@@ -1,0 +1,230 @@
+.carousel-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.carousel {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    /* background-color: bisque; */
+    width: 100%;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
+}
+
+.carousel.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.carousel:not(.active) {
+    z-index: 1;
+    transform: translateX(-1%);
+}
+
+.carousel--1 {
+    background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/houses-5514892_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.carousel--2 {
+    background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/residence-2219972_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.carousel--3 {
+    background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.carousel-let {
+
+    width: 100vw;
+}
+
+.carousel-letter {
+
+    width: 100vw;
+    font-family: sangblue;
+    font-size: 800px;
+    /* font-weight: bolder; */
+
+}
+
+.style-letter {
+    position: absolute;
+    /* right: 50px; */
+    top: 5%;
+    left: 15%;
+    background: linear-gradient(90deg,rgba(2, 168, 228, 0.422), rgba(8, 60, 65, 0.848));    
+    background-clip: text;
+    /* line-height: 130%; */
+    -webkit-background-clip: text;
+    transform: translateX(50%);
+    transition: transform 0.5s ease-in-out;
+    color: transparent;
+}
+
+.active .style-letter {
+    transform: translateX(0);
+}
+
+.carousel-head {
+    font-family: inter, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    font-weight: bold;
+    transform: translateY(200%);
+    transition: transform 1s ease-in-out;
+}
+
+.active .carousel-head {
+    transform: translateY(0);
+
+}
+
+.carousel-title {
+    font-family: sangbleu;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 30vw;
+    transform: translateY(200%);
+    transition: transform 1.2s ease-in-out;
+}
+
+.active .carousel-title {
+    transform: translateY(0);
+
+}
+
+.carousel-description {
+    font-family: sangbleu-regular;
+    /* font-size: 35px; */
+    font-weight: 100;
+    width: 30vw;
+    transform: translateY(200%);
+    transition: transform 1.2s ease-in-out;
+}
+
+.active .carousel-description {
+    transform: translateY(0);
+
+}
+
+.carousel-body {
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+
+}
+
+.svg-style {
+    position: absolute;
+    left: 25px;
+    top: 35px;
+
+}
+
+.circle-size .spin-on-hover:hover {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    animation: spin 5s linear infinite;
+}
+.spin-on-hover:focus {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    animation: spin 1s linear infinite;
+}
+
+.spin-on-hover {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -100;
+    z-index: 1;
+    /* animation: spin 5s linear infinite; */
+}
+
+.overSpin {
+    position: absolute;
+    left: -100px;
+    top: -75px;
+}
+
+.circle-size:hover {
+    width: 200px;
+    height: 50px;
+
+}
+
+.circle-size {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(200%);
+    transition: transform 1.5s ease-in-out;
+}
+
+.active .circle-size {
+    transform: translateY(0);
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(0%);
+        /* Hold the first image */
+    }
+
+    40% {
+        transform: translateX(-100%);
+        /* Slide to the second image */
+    }
+
+    73% {
+        transform: translateX(-100%);
+        /* Hold the second image */
+    }
+
+    80% {
+        transform: translateX(-200%);
+        /* Slide to the third image */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Stay at the third image */
+    }
+}

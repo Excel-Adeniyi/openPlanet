@@ -1,0 +1,92 @@
+.about_style {
+
+/* padding: 100px 100px; */
+    background-color: white;
+    padding-bottom: 50px;
+    /* color: green; */
+}
+
+.about_title {
+    font-family: sangbleu-Regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+
+}
+
+.hairline {
+    border: 0.3px solid black;
+}
+
+.about_text {
+    color: black;
+    font-family: Sangbleu-Regular;
+    font-size: 24px;
+    padding-top: 40px;
+    line-height: 45px;
+
+}
+
+.style-font {
+    color: rgb(128, 0, 0);
+    font-family: cormorant;
+    font-size: 55px;
+}
+
+.about-describe {
+    font-family: sangbleu-regular;
+    margin-top: 20px;
+}
+
+.more-about_org {
+    color: rgba(0, 0, 0, 0.824);
+    width: 100%;    
+    font-family: cormorant;
+    text-align: justify;
+}
+
+.background_color_style {
+    background: transparent;
+    border: 1px solid rgba(173, 7, 7, 0.979);
+    color: rgba(173, 7, 7, 0.979);
+    border-radius: 20px;
+    padding: 4px 25px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    text-transform: none;  
+    /* Unified padding */
+    font-family: 'inter', serif;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.background_color_style:hover {
+    color: white;
+    outline: none;
+    border: 1px solid rgba(173, 7, 7, 0.979);
+    animation: expandLinears .2s ease forwards;
+    /* Using the new linear animation */
+}
+.background_color_style:focus {
+    color: white;
+    outline: none;
+    font-family: Roboto;
+    border: 1px solid rgba(173, 7, 7, 0.979);
+    animation: expandLinears .2s ease forwards;
+    /* Using the new linear animation */
+
+}
+
+@keyframes expandLinears {
+    0% {
+        background: linear-gradient(to right, rgba(231, 115, 115, 0) 0%, rgba(111, 5, 5, 0.903) 50%, rgba(231, 115, 115, 0) 100%);
+    }
+    25%{
+        background: linear-gradient(to right, rgba(231, 115, 115, 0) 0%, rgba(139, 7, 7, 0.711) 25%, rgba(139, 8, 8, 0.903) 50%, rgba(133, 8, 8, 0.711)75%, rgba(115, 231, 115, 0) 100%);
+    }
+
+    100% {
+        background: linear-gradient(to right, rgba(194, 13, 13, 0.903) 0%, rgba(194, 13, 13, 0.903) 100%);
+    }
+}               

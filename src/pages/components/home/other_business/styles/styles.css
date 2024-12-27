@@ -1,0 +1,21 @@
+.business_title {
+    font-family: var(--sangbleu-bold);
+}
+.card{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 10px 10px 0px #00000087;
+}
+
+.card-img {
+    scale: 0px;
+    filter: grayscale(0%);
+    transition: scale 5s ease, filter 0.4s ease;
+}
+
+.card-img:hover{
+    scale: 1.5;
+    filter: grayscale(100%);
+}

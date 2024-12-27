@@ -1,0 +1,30 @@
+.logo_gradient {
+    background: linear-gradient(30deg, rgba(255, 255, 255, 0.754), rgb(3, 148, 221));
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-family: bowlby;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.icon-color {
+    color: rgb(239, 239, 239);
+}   
+
+.nav-font {
+    cursor: pointer;
+    font-family: Roboto, 'sans-serif';
+    font-size: 13px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.nav-button {
+    cursor: pointer;
+    font-family: Roboto, 'sans-serif';
+    font-size: 12.6px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.336); 
+    text-transform: uppercase;
+}

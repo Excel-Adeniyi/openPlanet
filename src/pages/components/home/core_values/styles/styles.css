@@ -1,0 +1,79 @@
+:root {
+    --baseurl: url('https://excel-adeniyi.github.io/planetImages/golf.jpg');
+    --text-bg: ;
+}
+
+.core_background {
+    /* height: 40vh; */
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgba(3, 15, 49, 0.942), rgba(2, 17, 46, 0.943)), var(--baseurl);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.core_title {
+    text-align: center;
+    color: #FFF;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-family: var(--roboto);
+}
+
+.core_abbre {
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--cormorant-bold);
+}
+
+.icon-size {
+    font-size: 30px;
+}
+
+.background_color_styless {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.979);
+    color: rgba(0, 0, 0, 0.979);
+    border-radius: 20px;
+    padding: 4px 25px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-transform: none;
+    /* Unified padding */
+    font-family: var(--inter);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.background_color_styless:hover {
+    color: black;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.979);
+    animation: expandLinear .2s ease forwards;
+    background-color: white;
+    /* Using the new linear animation */    
+}
+
+.background_color_styless:focus {
+    color: black;
+    outline: none;
+    font-family: Roboto;
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.979);
+    animation: expandLinear .2s ease forwards;
+    /* Using the new linear animation */
+
+}
+.border_style{
+    border: 0.1px solid rgba(255, 255, 255, 0.511);
+}
+@keyframes expandLinear {
+    0% {
+        background: linear-gradient(to right, rgba(231, 115, 115, 0) 0%, rgba(255, 255, 255, 0.979) 50%, rgba(231, 115, 115, 0) 100%);
+    }
+    25%{
+        background: linear-gradient(to right, rgba(231, 115, 115, 0) 0%, rgba(255, 255, 255, 0.711) 25%, rgba(234, 233, 233, 0.903) 50%, rgba(255, 255, 255, 0.711)75%, rgba(115, 231, 115, 0) 100%);
+    }           
+
+    100% {  
+        background: linear-gradient(to right, rgba(244, 241, 241, 0.903) 0%, rgba(245, 242, 242, 0.903) 100%);
+    }   
+}

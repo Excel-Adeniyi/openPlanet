@@ -1,0 +1,26 @@
+[
+    {
+        "background": "carousel--1",
+        "letter": "C",
+        "head": "Feature Project",
+        "title": "The Clinton Estate By Openplanet",
+        "description": "A stunning haven in Africa, blending modern luxury with serene landscapes, lush greenery, and unparalleled tranquility for a truly one-of-a-kind living experience.",
+        "button-info": "Explore Project"
+    },
+    {
+        "background": "carousel--2",
+        "letter": "T",
+        "head": "Feature Project",
+        "title": "The Place By Openplanet",
+        "description": "Serene environment with breathtaking landscapes, complemented by elegantly designed rooms featuring modern finishes and cozy interiors, creating an unmatched blend of comfort and beauty.",
+        "button-info": "Explore Project"
+    },
+    {
+        "background": "carousel--3",
+        "letter": "A",
+        "title": "Unmatched Comfort. Bold, Audacious Design. Flawless Craftsmanship.",
+        "head": "About Us",
+        "description": "OpenPlanet is a leading real estate company known for its strong foundation in intelligence, innovation, and excellence, consistently delivering exceptional properties that redefine modern living with unmatched quality and design.",
+        "button-info": "Learn more"
+    }
+]

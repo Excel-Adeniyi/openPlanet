@@ -1,0 +1,23 @@
+.ceo_image__style{
+    position: absolute;
+    width: 500px;
+    height: fit-content;
+    top: 45%;
+    overflow: hidden;
+}
+.ceo_image{
+    /* height: 400px; */
+    
+}
+.ceo_container{
+    background-color: #fff !important;
+    height: 50vh;
+}
+
+.text-font_style {
+    font-family: var(--cormorant);
+    
+}
+.text-font_style_bold {
+    font-family: var(--cormorant-bold);
+}
