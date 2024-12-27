@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # darviews
 
@@ -37,3 +38,7 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
+=======
+# openPlanet
+for openplant real-estate
+>>>>>>> bdae5188953d1b008e579a7b79f3a87f6a066c5e
