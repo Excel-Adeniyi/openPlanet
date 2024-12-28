@@ -1,0 +1,7 @@
+.projects-banner {
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.911), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg');
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

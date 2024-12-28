@@ -29,14 +29,16 @@ function Navbar() {
                       Home
                     </Link>
                   </li>
-                  <li
-                    className={`mx-10 ${
-                      pathname === '/project'
-                        ? 'text-slate-200'
-                        : 'text-slate-400 hover:text-slate-300 focus:text-slate-300'
-                    }`}
-                  >
-                    Projects
+                  <li>
+                    <Link to={'/projects'}
+                      className={`mx-10 ${
+                        pathname === '/project'
+                          ? 'text-slate-200'
+                          : 'text-slate-400 hover:text-slate-300 focus:text-slate-300'
+                      }`}
+                    >
+                      Projects
+                    </Link>
                   </li>
                   <li>
                     <Link
