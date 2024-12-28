@@ -1,0 +1,49 @@
+.team-container {
+    background: linear-gradient(180deg, rgb(30, 30, 30), rgba(0, 0, 0, 0.901)), url('https://excel-adeniyi.github.io/planetImages/houses-5514892_1920.jpg');
+    /* height: 100vh; */
+}
+
+.house_styles {
+    height: 40vh;
+    max-height: 400px;
+    width: 60%;
+    opacity: 1;
+
+    /* transition: opacity 0.5s ease, transform 0.5s ease; */
+}
+
+.service_carousels {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.c_image {
+    width: 27vh;
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease, height 1s ease,
+}
+
+.image-focused {
+    opacity: 1;
+    height: 40%;
+    /* width: 20%; */
+    transform: scale(1.2) translateX(-100%);
+    z-index: 2;
+}
+
+.image-blurred {
+    height: 40%;
+    opacity: 0.5;
+    width: 25vh;
+    filter: blur(2px) grayscale(100%);
+    transform: scale(0.9) translateX(50%);
+    z-index: 1;
+
+}
+.text-container{
+    height: 70vh;
+    width: 92vh;
+    border-top-right-radius: 25px;
+}
