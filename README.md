@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 
-# darviews
+# OpenPlanet
 
 Developed for Darviews Solutions frontend page
 
