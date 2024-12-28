@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router';
-import HomePAge from './pages/ui/home/home_page';
+import { AboutPage, HomePage } from './pages/ui';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<HomePAge/>} path='/'/>
-        <Route element={<HomePAge/>} path='/home'/>
+        <Route element={<HomePage/>} path='/'/>
+        <Route element={<AboutPage/>} path='/about'/>
       </Routes>
     </BrowserRouter>
   );

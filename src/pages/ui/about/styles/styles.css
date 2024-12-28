@@ -1,0 +1,22 @@
+.about-banner {
+    background: linear-gradient(46deg, rgba(42, 42, 42, 0.419), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms6.jpg');
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introducing{
+    /* font-family: --cormorant-medium; */
+    font-size: 24px;
+}
+.branding{
+    font-size: 40px;
+    font-family: --sangbleu;
+}
+.image-overlay{
+    /* position: absolute; */
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.188), rgba(0, 0, 0, 0.524)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms6.jpg');   
+}

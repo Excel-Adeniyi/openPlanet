@@ -63,7 +63,7 @@ export default function CoreValues() {
           </div>
         </div>
         <div className='text-xs capitalize flex justify-center my-6'>
-          <button className='bg-transparent border-1 border-white px-8 py-2 background_color_styless hover:bg-white focus:bg-white text-white rounded-full'>
+          <button className='bg-transparent border-1 border-white px-8 py-2 background_color_styless hover:bg-white focus:bg-white focus:text-black text-white rounded-full'>
             ABOUT US
           </button>
         </div>

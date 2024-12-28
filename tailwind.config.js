@@ -8,8 +8,10 @@ export default {
     extend: {},
     fontFamily: {
       cormorant: "cormorant",
-      cormorantBold: "cormorant-bold",
-      inter: "inter"
+      cormorantBold: "cormorantBold",
+      inter: "inter",
+      sangbleu: "sangbleu",
+      sangbleuBold: 'sangbleu-bold'
     },
     container: {
       default: {

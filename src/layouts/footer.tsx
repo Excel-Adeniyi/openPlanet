@@ -46,7 +46,7 @@ export default function Footer() {
               Creating Communities for Expatriates and Modern Nigerians{' '}
             </div>
           </div>
-          <div className=' flex justify-center font-cormorantBold'>
+          <div className=' flex justify-center '>
             <div>
               <p className='uppercase my-5'>Useful Link</p>
               <p className='my-2'>Property</p>
@@ -54,7 +54,7 @@ export default function Footer() {
               <p className='my-2'>Contact</p>
             </div>
           </div>
-          <div className=' flex justify-center font-cormorantBold'>
+          <div className=' flex justify-center '>
             <div>
               <p className='uppercase my-5'>Address</p>
               <p className='flex my-2'>
