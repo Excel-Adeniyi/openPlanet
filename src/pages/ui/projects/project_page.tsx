@@ -7,9 +7,13 @@ import Modal from '../../components/projects/modal/modal';
 import { useState } from 'react';
 export default function ProjectPage() {
   const [current, setCurrent] = useState<any>();
+  const [showModal, setShowModal] = useState(false)
+  const clearState = () => {
+    setCurrent({}), setShowModal(false)
+  }
   return (
     <div className='bg-white'>
-      {current && <Modal content={current} />}
+      {current && showModal && <Modal content={current} clearState={clearState}/>}
       <div className='projects-banner'>
         <Navbar />
         <div className='flex items-stretch justify-center h-full overflow-hidden'>
@@ -36,7 +40,7 @@ export default function ProjectPage() {
                     </div>
                     <button
                       className='bg-transparent border-slate-300 py-2 hover:bg-white hover:text-black my-2'
-                      onClick={() => setCurrent(content)}
+                      onClick={() => {setCurrent(content), setShowModal(true)}}
                     >
                       Details
                     </button>

@@ -27,3 +27,7 @@
     justify-content: center;
     font-weight: bolder;
 }
+.cross_button {
+    position: absolute;
+    right: 0;
+}
