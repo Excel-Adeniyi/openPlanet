@@ -13,7 +13,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 export default function Footer() {
   return (
     <footer className='footer-container'>
-      <div className=''>
+      <div className='bg-slate-200'>
         <div className='p-24 border-r-2 text-black'>
           <div className='text-center text-2xl '>Follow Us</div>
           <div className='flex justify-center text-black'>

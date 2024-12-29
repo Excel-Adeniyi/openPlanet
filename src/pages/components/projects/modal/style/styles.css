@@ -1,0 +1,29 @@
+.modal_style {
+    position: fixed;
+    height: 100%;
+    /* width: 100vh; */
+    background-color: rgba(12, 54, 106, 0.42);
+    z-index: 2;
+    overflow-y: hidden;
+    align-content: center;
+}
+
+.modal_card {
+    background-color: white;
+    color: black;
+    /* height: 60vh; */
+    /* font-family: ; */
+    width: 80vh;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.location_style {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.597);
+    width: 100%;
+    justify-content: center;
+    font-weight: bolder;
+}

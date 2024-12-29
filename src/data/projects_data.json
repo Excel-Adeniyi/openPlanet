@@ -1,3 +1,36 @@
 [
-    
+    {
+        "name": " The Clinton Estate By Openplanet",
+        "location": "Katampe-Usuma, Abuja",
+        "apartments": "3 Bedroom Apartment \n 2 Bedroom Apartment \n 1 Bedroom Studio Apartment",
+        "terraces1": "4 Bedrooms Terrace \n 3 Bedrooms Terrace",
+        "detached": "6 Bedrooms Detached Duplex \n 5 Bedrooms Mansion",
+        "backGround": "the_clinton1",
+        "image": "https://excel-adeniyi.github.io/planetImages/7Bedrooms2.jpg"
+    },
+    {
+        "name": " The Place By Openplanet ",
+        "location": "Jahi, Abuja",
+        "apartments": "3 Bedroom Apartment \n 2 Bedroom Apartment",
+        "terraces1": "4 Bedrooms Terrace ",
+        "detached": "5 Bedrooms Detached Duplex",
+        "backGround": "the_place",
+         "image": "https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg"
+    },
+    {
+        "name": " The Clinton Estate By Openplanet ",
+        "location": "Guzape, Abuja",
+        "apartments": "3 Bedroom Apartment \n 2 Bedroom Apartment \n 1 Bedroom Studio Apartment",
+        "terraces1": "4 Bedrooms Terrace \n 3 Bedrooms Terrace",
+        "detached": "6 Bedrooms Detached Duplex \n 5 Bedrooms Mansion",
+        "backGround": "the_clinton2",
+        "image": "https://excel-adeniyi.github.io/planetImages/7Bedrooms3.jpg"
+    },
+    {
+        "name": " The Clinton Estate By Openplanet ",
+        "location": "Mboro, Abuja",
+        "detached": " 5 Bedrooms Mansion",
+        "backGround": "the_clinton3",
+        "image":"https://excel-adeniyi.github.io/planetImages/7Bedrooms4.jpg"
+    }
 ]

@@ -1,7 +1,100 @@
 .projects-banner {
     background: linear-gradient(180deg, rgba(42, 42, 42, 0.911), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg');
-    height: 55vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 50vh;
+}
+
+.the_place {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100%;  */
+    width: 100%;
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: end;
+    padding: 20px;
+    color: white;
+    height: 70vh;
+    border-radius: 20px;
+
+}
+
+.the_clinton1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: end;
+    padding: 20px;
+    color: white;
+    height: 70vh;
+    border-radius: 20px;
+    /* transform: scale(1.1); */
+
+}
+
+.the_clinton2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: end;
+    padding: 20px;
+
+    color: white;
+    height: 70vh;
+    border-radius: 20px
+}
+
+.the_clinton3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: end;
+    padding: 20px;
+    color: white;
+    height: 70vh;
+    border-radius: 20px
+}
+
+.the_clinton1:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+    transition: transform 2s ease, background 2s ease;
+}
+
+.the_clinton2:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+    transition: transform 2s ease, background 2s ease;
+}
+
+.the_clinton3:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+    transition: transform 2s ease, background 2s ease;
+}
+
+.the_place:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.02);
+    transition: transform 2s ease, background 2s ease;
 }
