@@ -1,6 +1,7 @@
 .more_info_style{
     background: linear-gradient(rgb(6, 1, 55), rgba(7, 100, 136, 0.805)), url('https://excel-adeniyi.github.io/planetImages/building-3390318_1920.jpg');
     height: 50%;
+    width: 100vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,4 +43,45 @@
     font-size: 18px;
     font-family: var(--cormorant);
     position: absolute;
+}
+
+@media (max-width: 900px) {
+    .content1{
+        font-size: 25px;
+        position: absolute;
+        left: 15%;
+        top: 90px;
+        right: 50%;
+        color: white;
+        font-family: var(--sangbleu);
+    }
+    .content2{
+        text-align: end;
+        font-size: 35px;
+        position: absolute;
+        left: 35%;
+        top: 170px;
+        right: 50%;
+        color: white;
+        font-family: var(--sangbleu);
+    }
+    .content3{
+        /* text-align: end; */
+        position: absolute;
+        left: 12%;
+        top: 280px;
+        right: 50%;
+        font-size: 30px;
+        color: white;
+        font-family: var(--sangbleu);
+    }
+    .content4{
+        width: 300px;
+        left: 10%;
+        top: 350px;
+        right: 10%;
+        font-size: 12px;
+        font-family: var(--cormorant);
+        position: absolute;
+    }
 }

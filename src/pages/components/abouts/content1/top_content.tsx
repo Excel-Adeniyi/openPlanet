@@ -1,11 +1,11 @@
 export default function AboutTopContent() {
   return (
-    <div className='my-24 text-black mx-24 px-24  pt-10'>
+    <div className='my-24 text-black lg:mx-24 lg:px-24  mx-4  pt-10'>
       <hr className='border-1 border-black' />
       <div className=' tracking-widest uppercase text-sm my-4 text-red-700'>
         Profile at a Glance
       </div>
-      <div className='grid grid-cols-2 gap-8 '>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 '>
         <div>
             <div className="font-sangbleu my-4 text-red-700 text-2xl">Elegance Redefined, Harmony Unmatched, Excellence Assured</div>
           <p className='text-sm text-justify'>
@@ -21,7 +21,7 @@ export default function AboutTopContent() {
             innovation.
           </p>
         </div>
-        <div className='grid grid-cols-2 gap-6'>
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-6'>
           <div>
             <div className='text-red-700 tracking-widest my-2'>Our Vision</div>
             <div className='text-sm text-justify'>

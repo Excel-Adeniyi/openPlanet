@@ -6,6 +6,12 @@ import { ImCross } from 'react-icons/im';
 export default function Modal({ content, clearState }: any) {
   // console.log(content)
   //   const init = content.
+    const phoneNumber = '+2347078080312';
+    const whatsappChat = (name:string, location: string) => {
+      const messageInfo = '*Project name:*' + ' ' + name + '\n' + '*Location:*' + ' ' + location 
+      const message = encodeURI(messageInfo)
+      window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+    }
   return (
     <div className='modal_style  overflow-hidden h-full w-screen'>
       <div className='flex justify-center'>
@@ -56,11 +62,11 @@ export default function Modal({ content, clearState }: any) {
               </div>
             )}
           </div>
-          <div className='my-5 flex justify-center'>
-            <button className='text-white flex w-96 justify-center bg-slate-700 hover:bg-slate-600 tracking-wider'>
+          <div className='my-5 mx-5 flex justify-center'>
+            <button className='text-white flex w-96 justify-center bg-slate-700 hover:bg-slate-600 tracking-wider' onClick={() => whatsappChat(content.name, content.location)}>
               {' '}
               <IoLogoWhatsapp className='my-1 mx-2 ' /> Enquire on Whatsapp
-            </button>
+            </button> 
           </div>
         </div>
       </div>

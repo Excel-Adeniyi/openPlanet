@@ -98,3 +98,18 @@
     transform: scale(1.02);
     transition: transform 2s ease, background 2s ease;
 }
+
+@media (max-width:900px) {
+    .the_clinton1 {
+        height: 50vh;
+    }
+    .the_clinton2{
+        height: 50vh;
+    }
+    .the_clinton3{
+        height: 50vh;
+    }
+    .the_place{
+        height: 50vh;
+    }
+}

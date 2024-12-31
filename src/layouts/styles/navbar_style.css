@@ -17,6 +17,7 @@
     font-family: Roboto, 'sans-serif';
     font-size: 13px;
     font-weight: bolder;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -27,4 +28,11 @@
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.336); 
     text-transform: uppercase;
+}
+
+
+@media (max-width: 900px) {
+    .logo_gradient{
+        font-size: 20px;
+    }
 }

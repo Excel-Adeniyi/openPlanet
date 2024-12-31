@@ -54,7 +54,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+[data-aos^=fade][data-aos^=fade]{
+  opacity: 1 !important;
+}
+.aos-animate {
+ /* Ensure it stays fully visible */
+  transform: none !important; /* Remove any transformation applied during animation */
+}
 a {
   font-weight: 500;
   color: #646cff;

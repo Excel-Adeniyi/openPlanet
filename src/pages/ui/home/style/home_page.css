@@ -1,4 +1,4 @@
-.header_carousel{
+.header_carousel {
     background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/houses-5514892_1920.jpg');
     /* height: 100vh; */
 }
@@ -6,11 +6,13 @@
 .other-container {
     height: 100vh;
 }
-.circle_position{
+
+.circle_position {
     position: absolute;
-    top: 50%;
+    top: 56%;
     right: 0;
 }
+
 .spin-on-hovers {
     display: inline-block;
     font-family: cormorant;
@@ -18,7 +20,8 @@
     height: 300px;
     animation: spin 5s linear infinite;
 }
-.talk_style{
+
+.talk_style {
     text-align: center;
     align-content: center;
     height: 20vh;
@@ -26,7 +29,42 @@
     color: rgb(186, 86, 86);
     font-family: Sangbleu;
     font-size: 24px;
+
 }
+.msg{
+    transform: translateY(0%);
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+}
+.msg.in-view {
+    animation: comin 1s ease-in-out forwards;
+    opacity: 1;
+}
+.floating_button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    /* height: 100vh; */
+    z-index: 4;
+}
+.whatsapp_text{
+    font-size: 10px;
+    height: fit-content;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    border-radius: 2px;    
+}
+@media (max-width: 900px) {
+    .talk_style {
+        font-size: 16px;
+        width: 100vw;
+        padding: 10px;
+
+    }
+}
+
 @keyframes spin {
     from {
         transform: rotate(0);

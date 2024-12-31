@@ -5,15 +5,22 @@ import Footer from '../../../layouts/footer';
 import { FaLocationDot } from 'react-icons/fa6';
 import Modal from '../../components/projects/modal/modal';
 import { useState } from 'react';
+import ScheduleModal from '../../../global/modal/schedule_modal';
+import SideBar from '../../../layouts/sidebar';
 export default function ProjectPage() {
   const [current, setCurrent] = useState<any>();
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
   const clearState = () => {
-    setCurrent({}), setShowModal(false)
-  }
+    setCurrent({}), setShowModal(false);
+  };
+
   return (
     <div className='bg-white'>
-      {current && showModal && <Modal content={current} clearState={clearState}/>}
+      <ScheduleModal />
+      <SideBar />
+      {current && showModal && (
+        <Modal content={current} clearState={clearState} />
+      )}
       <div className='projects-banner'>
         <Navbar />
         <div className='flex items-stretch justify-center h-full overflow-hidden'>
@@ -26,11 +33,11 @@ export default function ProjectPage() {
         </div>
       </div>
 
-      <div className='text-black grid grid-cols-2 gap-8 py-24'>
+      <div className='text-black grid lg:grid-cols-2 grid-cols-1 gap-8 py-24'>
         {projectdata &&
           projectdata.map((content, index) => {
             return (
-              <div key={index} className='px-24 '>
+              <div key={index} className='lg:px-24 px-4'>
                 <div className={content.backGround}>
                   <div>
                     <div className='font-sangbleu text-xl'>{content.name}</div>
@@ -40,7 +47,10 @@ export default function ProjectPage() {
                     </div>
                     <button
                       className='bg-transparent border-slate-300 py-2 hover:bg-white hover:text-black my-2'
-                      onClick={() => {setCurrent(content), setShowModal(true)}}
+                      onClick={() => {
+                        setCurrent(content), setShowModal(true);
+                     
+                      }}
                     >
                       Details
                     </button>

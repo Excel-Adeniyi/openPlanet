@@ -1,0 +1,53 @@
+.overall_container{
+    width: 100vw;
+}
+.schedule_container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(12, 54, 106, 0.42);
+    z-index: 3;
+    overflow-y: hidden;
+    align-content: center;
+}
+.schedule_card{
+    background: linear-gradient(45deg, rgba(45, 83, 90, 0.876), rgba(0, 166, 255, 0.27)), url('https://excel-adeniyi.github.io/planetImages/castle-8153987_1280.jpg');
+    color: black;
+    /* height: 60vh; */
+    /* font-family: ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* height: 50vh; */
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    color: black;
+    filter:  invert(0.8);;
+}
+
+.hide_schedule_modal{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.show_schedule_modal{
+    opacity: 1;
+}
+@media (max-width: 900px) {
+    .schedule_card{
+        background: linear-gradient(45deg, rgba(45, 83, 90, 0.876), rgba(0, 166, 255, 0.27)), url('https://excel-adeniyi.github.io/planetImages/castle-8153987_1280.jpg');
+        color: black;
+        /* height: 60vh; */
+        /* font-family: ; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80vw;
+        /* height: 50vh; */
+        overflow-x: hidden;
+        border-radius: 10px;
+    }
+}

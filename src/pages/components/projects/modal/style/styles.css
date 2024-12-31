@@ -30,4 +30,12 @@
 .cross_button {
     position: absolute;
     right: 0;
+    
+}
+
+@media (max-width: 900px) {
+    .modal_card{
+        width: 60vh;
+        margin: 10px;
+    }
 }

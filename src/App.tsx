@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router';
-import { AboutPage, HomePage, ProjectPage } from './pages/ui';
-
+import { AboutPage, Contact, HomePage, ProjectPage } from './pages/ui';
+import 'aos/dist/aos.css';
 function App() {
   return (
     <BrowserRouter>
@@ -9,6 +9,7 @@ function App() {
         <Route element={<HomePage/>} path='/'/>
         <Route element={<AboutPage/>} path='/about'/>
         <Route element={<ProjectPage/>} path='/projects'/>
+        <Route element={<Contact/>} path='/contact'/>
       </Routes>
     </BrowserRouter>
   );

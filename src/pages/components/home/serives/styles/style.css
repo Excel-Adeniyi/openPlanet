@@ -1,7 +1,10 @@
 .house_style {
-    height: 60vh;
+    height: 50vh;
     max-height: 600px;
-    width: 90%;
+    /* width: 90%; */
+    width: 30vw;
+    margin: 30px;
+    overflow: hidden;
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -62,9 +65,31 @@
     font-size: 12px;
 
 }
+
 .service_title{
     font-family: sangbleu-regular;
     font-size: 18px;
+}
+
+.image_transition{
+    transform: translateY(0%);
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-in-out;
+}
+
+.image_transition.in-view {
+    animation: comin 1s ease-in-out forwards;
+    opacity: 1;
+}
+@keyframes comin {
+    0% {
+        transform: translateY(30%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 @keyframes moveout {
     0% {
@@ -85,10 +110,21 @@
 
 @media (max-width: 768px) {
     .house_style {
-        height: 50vh;
+        height: 40vh;
+        width: 75vw;
+            /* margin-bottom: 0px; */
     }
+    .current-font{
+        width: 90vw;
+    }
+    .service_title{
+        font-size: 14px;
 
+    }.title-content {
+        font-size: 24px;
+    }
     .service-container {
-        height: 70vh;
+        height: 120vh;
+        padding-bottom: 10px;
     }
 }

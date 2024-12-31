@@ -21,6 +21,7 @@
 
 .c_image {
     width: 27vh;
+
     position: absolute;
     transition: transform 0.5s ease, opacity 0.5s ease, height 1s ease,
 }

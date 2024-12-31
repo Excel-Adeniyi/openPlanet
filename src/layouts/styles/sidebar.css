@@ -1,0 +1,28 @@
+.sidebar_container {
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    width: 0vw;
+    overflow-y: scroll;
+   transition: width 1s ease;
+}
+.show_sidebar {
+    width: 90vw;
+}
+.logo_gradient_sidebar {
+    background: linear-gradient(30deg, rgba(3, 148, 221, 0.648), rgb(3, 148, 221));
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: bowlby;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.icon-color {
+    color: rgb(239, 239, 239);
+}  
+
+.menus_styles{
+    height: 55vh;
+}

@@ -1,9 +1,10 @@
 import './styles/style.css';
 import { useState, useEffect } from 'react';
 import services from '../../../../data/service_data.json';
+import useInteractor from '../../../../hooks/useInteractor';
 export default function OurServices() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const {serviceImageRef} = useInteractor()
   useEffect(() => {
     const intervals = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
@@ -11,8 +12,8 @@ export default function OurServices() {
     return () => clearInterval(intervals);
   }, []);
   return (
-    <div className='bg-blue-200'>
-      <div className='mx-24 px-24 py-24 relative service-container'>
+    <div className='bg-blue-200 w-screen'>
+      <div className='lg:mx-24 lg:pr-2 mx-5 lg:px-24 lg:py-24 relative service-container'>
         {services.map((content, index) => (
           <div className='relative' key={index}>
             <div
@@ -21,20 +22,21 @@ export default function OurServices() {
               }`}
               aria-hidden={currentIndex !== index}
             >
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>   
-                <div
-                  className={`${currentIndex === index ? 'transition' : ''}`}
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>   
+                <div  data-aos='fade-up'
+                  className={`${serviceImageRef ? 'in-view' : ""} image_transition ${currentIndex === index ? 'transition' : ''} overflow-hidden w-screen`}
                 >
                   <img
                     src={content.image || '/default-image.png'}
                     // alt={content.alt || 'Service'}
-                    className={`house_style  rounded-lg shadow-xl ${
+                   
+                    className={`house_style  rounded-lg shadow-xl overflow-hidden ${
                       currentIndex === index ? 'transition' : ''
                     }`}
                   />
                 </div>
-                <div>
-                  <div className='text-black service_title mt-10'>
+                <div >
+                  <div className={`text-black service_title lg:mt-10 image_transition ${serviceImageRef ? 'in-view' : ""}`}>
                     Our Services
                     <hr className='mt-4 hairline mb-4' />
                     <div className='grid'>

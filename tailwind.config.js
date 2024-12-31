@@ -10,7 +10,7 @@ export default {
       cormorant: "cormorant",
       cormorantBold: "cormorantBold",
       inter: "inter",
-      sangbleu: "sangbleu",
+      sangbleu: "sangbleu-regular",
       sangbleuBold: 'sangbleu-bold'
     },
     container: {

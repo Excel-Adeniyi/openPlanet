@@ -1,6 +1,7 @@
 .carousel-container {
     position: relative;
     background-color: rgba(0, 0, 0, 0.445);
+    /* overflow-x: hidden; */
 }
 
 .carousel {
@@ -68,7 +69,7 @@
     /* right: 50px; */
     top: 5%;
     left: 15%;
-    background: linear-gradient(90deg,rgba(2, 168, 228, 0.422), rgba(8, 60, 65, 0.848));    
+    background: linear-gradient(90deg, rgba(2, 168, 228, 0.422), rgba(8, 60, 65, 0.848));
     background-clip: text;
     /* line-height: 130%; */
     -webkit-background-clip: text;
@@ -132,6 +133,67 @@
 
 }
 
+@media (max-width:900px) {
+    .carousel-body {
+        position: absolute;
+        bottom: 18%;
+        left: 2% !important;
+    }
+    .carousel-description {
+        font-family: sangbleu-regular;
+        /* font-size: 35px; */
+        font-weight: 12px;
+        /* width: 40vw; */
+        /* margin-right: 100%; */
+        text-align: start;
+        transform: translateY(200%);
+        transition: transform 1.2s ease-in-out;
+    }
+    .carousel-title {
+        font-family: sangbleu;
+        font-size: 22px;
+        text-align: start;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 90vw;
+        transform: translateY(200%);
+        transition: transform 1.2s ease-in-out;
+    }
+    .carousel-head {
+        font-family: inter, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+    text-align: start;
+    width: 90vw;
+        font-weight: bold;
+        transform: translateY(200%);
+        transition: transform 1s ease-in-out;
+    }
+    .carousel--1 {
+        background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.774)), url('https://excel-adeniyi.github.io/planetImages/houses-5514892_1920.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    
+    }
+    
+    .carousel--2 {
+        background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.719)), url('https://excel-adeniyi.github.io/planetImages/residence-2219972_1920.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        height: 100vh;
+    }
+    
+    .carousel--3 {
+        background: linear-gradient(46deg, rgba(42, 42, 42, 0.726), rgba(0, 0, 0, 0.713)), url('https://excel-adeniyi.github.io/planetImages/4bedduplex.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        height: 100vh;
+    }
+}
+
 .svg-style {
     position: absolute;
     left: 25px;
@@ -145,6 +207,7 @@
     height: 300px;
     animation: spin 5s linear infinite;
 }
+
 .spin-on-hover:focus {
     display: inline-block;
     width: 300px;
@@ -178,6 +241,7 @@
     width: 200px;
     height: 50px;
     position: absolute;
+    cursor: pointer;
     bottom: 0;
     transform: translateY(200%);
     transition: transform 1.5s ease-in-out;

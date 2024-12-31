@@ -3,9 +3,10 @@ import Navbar from '../../../../layouts/navbar';
 import './style/style.css';
 import carouselData from '../../../../data/carousel_data.json';
 import { BsArrowRight } from 'react-icons/bs';
+import { useNavigate } from 'react-router';
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const navigate = useNavigate()
   useEffect(() => {
     const intervals = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
@@ -13,27 +14,29 @@ export default function Carousel() {
     return () => clearInterval(intervals);
   }, []);
   return (
-    <div className='relative'>
+    <div className='relative text-white'>
       <div className='carousel-container'>
         {carouselData.map((styles, index) => {
           return (
-            <div
+            <div key={index}
               className={`carousel ${styles.background} ${
                 currentIndex === index ? 'active' : ''
               }`}
             >
               <Navbar />
-              <div className='carousel-let mx-10'>
+              <div className='carousel-let lg:mx-10 '>
                 <div className='carousel-letter '>
                   <div className='style-letter'>{styles.letter}</div>
                 </div>
                 <div className='carousel-body'>
                   <div className='carousel-head'>{styles.head}</div>
                   <div className='carousel-title'>{styles.title}</div>
-                  <div className='carousel-description'>
+                  {/* <div></div> */}
+                  <div className='carousel-description lg:block hidden'>
                     {styles.description}
                   </div>
-                  <div className='relative circle-size'>
+                  <div className='lg:hidden w-screen pr-10 carousel-description'>{styles.description}</div>
+                  <div className='relative circle-size lg:mx-0 mx-4' onClick={() => navigate('/projects')}>
                     <div className='overSpin'>
                       <div className='spin-on-hover'>
                         <svg

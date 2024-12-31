@@ -7,11 +7,22 @@
 }
 .ceo_image{
     /* height: 400px; */
-    
+    width: 100vw;
 }
+.ceo_title {
+    font-family: sangbleu-Regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px
+
+}
+
+
 .ceo_container{
     background-color: #fff !important;
     height: 50vh;
+    /* width: 100vw; */
 }
 
 .text-font_style {
@@ -20,4 +31,10 @@
 }
 .text-font_style_bold {
     font-family: var(--cormorant-bold);
+}
+
+@media (max-width: 900px) {
+    .ceo_title{
+        font-size: 12px;
+    }
 }
