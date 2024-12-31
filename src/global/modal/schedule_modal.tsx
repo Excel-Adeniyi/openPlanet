@@ -10,7 +10,7 @@ export default function ScheduleModal() {
     name: '',
     email: '',
     date: '',
-    project: '',
+    location: '',
   });
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -29,7 +29,7 @@ export default function ScheduleModal() {
       formInput.name !== '' &&
       formInput.email !== '' &&
       formInput.date !== '' &&
-      formInput.project
+      formInput.location
     ) {
       const message =
         '*Name:*' +
@@ -44,9 +44,9 @@ export default function ScheduleModal() {
         ' ' +
         '\n' +
         ' ' +
-        '*Project Name:*' +
+        '*Location:*' +
         ' ' +
-        formInput.project +
+        formInput.location +
         ' ' +
         '\n' +
         ' ' +
@@ -54,11 +54,12 @@ export default function ScheduleModal() {
         ' ' +
         formInput.date;
       const getencodeUri = encodeURI(message);
-      setFormInput({ name: '', date: '', email: '', project: '' });
+      setFormInput({ name: '', date: '', email: '', location: '' });
       window.location.href = `https://wa.me/${phoneNumber}?text=${getencodeUri}`;
     }
     // console.log(formInput)
   };
+  const today = new Date().toISOString().split("T")[0]; 
   return (
     <div className={`overall_container ${showModal ? 'block' : 'hidden'} `}>
       <div className='schedule_container px-5'>
@@ -96,13 +97,13 @@ export default function ScheduleModal() {
                 </div>
               </div>
               <div className='my-5 font-cormorantBold'>
-                <label className='text-white'>Project Name</label>
+                <label className='text-white'>Location</label>
                 <div>
                   {' '}
                   <input
                     type='text'
                     // placeholder='select appointment date'
-                    name='project'
+                    name='location'
                     className='w-full bg-white border-2 rouned-lg text-black focus:outline-none focus:border-slate=400'
                     onChange={handleChange}
                   />
@@ -116,6 +117,7 @@ export default function ScheduleModal() {
                     type='date'
                     placeholder='select appointment date'
                     name='date'
+                    min={today}
                     className='w-full bg-white border-2 rouned-lg text-black focus:outline-none focus:border-slate=400'
                     onChange={handleChange}
                   />

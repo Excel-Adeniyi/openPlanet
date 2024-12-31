@@ -18,7 +18,7 @@
     letter-spacing: 5px;
     font-family: var(--roboto);
     transform: translateY(0%);
-    opacity: 0;
+    /* opacity: 0; */
     /* Initially hidden */
     transition: opacity 1s ease-in-out;
 }

@@ -13,7 +13,7 @@ export default function Contact() {
         <ScheduleModal />
 
         <Navbar />
-        <div className='flex items-stretch justify-center h-full overflow-hidden'>
+        <div className='flex items-stretch justify-center h-full text-white mx-3 overflow-hidden'>
           <div className='self-center'>
             <div className='text-center introducing'>Contact</div>
             <div className='branding'>Connect With Us Through Our Channels</div>

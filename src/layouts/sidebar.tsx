@@ -15,7 +15,7 @@ export default function SideBar() {
   const {toggleModal}: any = useScheduleModal()
   const { pathname } = useLocation();
   return (
-    <div className={`${isOpen ? 'show_sidebar' : ''} fixed h-vh bg-slate-700 sidebar_container`}>
+    <div className={`${isOpen ? 'show_sidebar' : ''} fixed h-full bg-slate-700 sidebar_container text-white `}>
       <div className='grid grid-cols-2'>
         <div className='logo_gradient_sidebar flex mx-4 items-stretch justify-self-start '>
           <div className='self-center'>
@@ -31,14 +31,14 @@ export default function SideBar() {
       </div>
 
       <div className='text-3xl mx-4 font-cormorantBold menus_styles mt-10'>
-        <div className='my-4'><Link to={'/'} className={`text-white focus:text-red-400 ${pathname === '/' ? 'text-red-400' : 'text-white'}`}>Home</Link></div>
-        <div className='my-4'><Link to={'/projects'} className={`text-white focus:text-red-400 ${pathname === '/projects' ? 'text-red-400' : 'text-white'}`}>Projects</Link></div>
-        <div className='my-4'><Link to={'/about'} className={`text-white focus:text-red-400 ${pathname === '/about' ? 'text-red-400' : 'text-white'}`}>About</Link></div>
-        <div className='my-4'><Link to={'/contact'} className={`text-white focus:text-red-400 ${pathname === '/contact' ? 'text-red-400' : 'text-white'}`}>Contacts</Link></div>
-        <div className='my-4' onClick={() => {toggleModal(), toggleBar()}}>Schedule Appointment</div>
+        <div className='my-4'><Link to={'/'} className={`text-white focus:text-red-400 ${pathname === '/' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Home</Link></div>
+        <div className='my-4'><Link to={'/projects'} className={`text-white focus:text-red-400 ${pathname === '/projects' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Projects</Link></div>
+        <div className='my-4'><Link to={'/about'} className={`text-white focus:text-red-400 ${pathname === '/about' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>About</Link></div>
+        <div className='my-4'><Link to={'/contact'} className={`text-white focus:text-red-400 ${pathname === '/contact' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Contacts</Link></div>
+        <div className='my-4 text-white focus:text-red-400 ' onClick={() => {toggleModal(), toggleBar()}} >Schedule Appointment</div>
       </div>
       <hr className=' mx-4' />
-      <div className=' font-sangbleu tracking-wide mx-4 my-10'>
+      <div className=' font-sangbleu tracking-wide mx-4 my-5 text-white'>
         <div className='mt-4 text-sm'>contact information</div>
         <div>
           <p className='flex text-xs text-red-200 my-2'>Info@openplanet.ng</p>
@@ -47,7 +47,7 @@ export default function SideBar() {
       </div>
       <hr className='mx-4 mt-10' />
       <div className='mt-6'>
-        <div className='text-center text-sm '>Follow Us</div>
+        <div className='text-center text-sm text-white '>Follow Us</div>
         <div className='flex justify-center text-white'>
           <div className='p-4 text-xl hover:text-red-700 focus:text-red-700'>
             <FaInstagram />

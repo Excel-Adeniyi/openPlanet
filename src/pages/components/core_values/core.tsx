@@ -71,7 +71,7 @@ export default function CoreValues() {
                   <RiStarSFill className='icon-size' />
                 </div>
               </div>
-              <div className='text-center core_title uppercase'>
+              <div className='text-center core_title uppercase text-white'>
                 Professionalism
               </div>
               <div className='text-center my-6 text-font_style_bold'>

@@ -32,15 +32,15 @@ export default function Modal({ content, clearState }: any) {
             </div>
             <div></div>
           </div>
-          <div className='grid grid-cols-2 gap-1 mx-5 my-5'>
+          <div className='grid lg:grid-cols-2 gap-1 mx-5 my-5'>
             <div className='my-3'>
               <div className='font-cormorant'>Name</div>
-              <div className='tracking-wider'>{content.name}</div>
+              <div className='tracking-wider font-cormorantBold'>{content.name}</div>
             </div>
             {content.apartments && (
               <div className='my-3'>
                 <div className='font-cormorant'>Apartment</div>
-                <div className='tracking-wider'>
+                <div className='tracking-wider font-cormorantBold'>
                   <Splita splitKey={'\n'} content={content.apartments || ''} />
                 </div>
               </div>
@@ -48,7 +48,7 @@ export default function Modal({ content, clearState }: any) {
             {content.terraces1 && (
               <div>
                 <div className='font-cormorant'>Terrace</div>
-                <div className='tracking-wider'>
+                <div className='tracking-wider font-cormorantBold'>
                   <Splita splitKey={'\n'} content={content.terraces1 || ''} />
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function Modal({ content, clearState }: any) {
             {content.detached && (
               <div>
                 <div className='font-cormorant'>Duplex & Mansion</div>
-                <div className='tracking-wider'>
+                <div className='tracking-wider  font-cormorantBold'>
                   <Splita splitKey={'\n'} content={content.detached || ''} />
                 </div>
               </div>

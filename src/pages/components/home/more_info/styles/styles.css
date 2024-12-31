@@ -1,7 +1,8 @@
 .more_info_style{
     background: linear-gradient(rgb(6, 1, 55), rgba(7, 100, 136, 0.805)), url('https://excel-adeniyi.github.io/planetImages/building-3390318_1920.jpg');
-    height: 50%;
+    height: 100%;
     width: 100vw;
+    overflow-y: hidden;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,8 +81,11 @@
         left: 10%;
         top: 350px;
         right: 10%;
-        font-size: 12px;
+        font-size: 16px;
         font-family: var(--cormorant);
         position: absolute;
+    }
+    .more_info_style{
+        height: 8%;
     }
 }

@@ -1,7 +1,7 @@
 import './styles/style.css';
 export default function CEO() {
   return (
-    <div className='bg-white w-screen ceo_container pb-10'>
+    <div className='bg-white w-screen ceo_container h-full pb-10'>
       <div className='grid lg:grid-cols-3 grid-cols-1 lg:gap-10'>
         <div>
           <div className='ceo_image__style border-1 lg:block hidden mx-24'>

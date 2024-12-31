@@ -23,7 +23,7 @@ export default function ProjectPage() {
       )}
       <div className='projects-banner'>
         <Navbar />
-        <div className='flex items-stretch justify-center h-full overflow-hidden'>
+        <div className='flex items-stretch justify-center h-full text-white mx-3 overflow-hidden'>
           <div className='self-center'>
             <div className='text-center introducing'>Projects</div>
             <div className='branding'>
@@ -43,7 +43,7 @@ export default function ProjectPage() {
                     <div className='font-sangbleu text-xl'>{content.name}</div>
                     <div className='flex '>
                       <FaLocationDot className='my-1 mr-2' />
-                      <div className='tracking-wider'>{content.location} </div>
+                      <div className='tracking-wider font-cormorant'>{content.location} </div>
                     </div>
                     <button
                       className='bg-transparent border-slate-300 py-2 hover:bg-white hover:text-black my-2'

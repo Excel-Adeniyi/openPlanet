@@ -25,14 +25,14 @@ export default function AboutTopContent() {
           <div>
             <div className='text-red-700 tracking-widest my-2'>Our Vision</div>
             <div className='text-sm text-justify'>
-              To become a trailblazer in Africa’s real estate landscape,
+              A trailblazer in Africa’s real estate landscape,
               delivering iconic projects that merge creativity, sustainability,
               and innovation, leaving a lasting legacy of impact and
               distinction.
             </div>
             <div className='text-sm my-4 text-justify'>
               {' '}
-              With eight groundbreaking projects currently underway, OpenPlanet
+              With eight groundbreaking projects, OpenPlanet
               continues to lead with purpose and passion, crafting spaces that
               resonate with comfort, community, and class. From every foundation
               to the final detail, we aim to transform how people experience

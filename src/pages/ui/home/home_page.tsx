@@ -3,6 +3,8 @@ import ScheduleModal from '../../../global/modal/schedule_modal';
 import useInteractor from '../../../hooks/useInteractor';
 import Footer from '../../../layouts/footer';
 import SideBar from '../../../layouts/sidebar';
+import Typewriter from 'typewriter-effect';
+
 import {
   About,
   Carousel,
@@ -19,23 +21,23 @@ export default function HomePAge() {
   const phoneNumber = '+2347078080312';
   const whatsappChat = () => {
     window.location.href = `https://wa.me/${phoneNumber}?text=Hello`;
-  }
+  };
   return (
     <>
-      <div className='grid grid-rows-2 overflow-x-hidden '>
+      <div className='grid lg:grid-rows-2 overflow-x-hidden home_container '>
         <div className='floating_button'>
           <div className='flex cursor-pointer' onClick={whatsappChat}>
             <div className='bg-black text-white whatsapp_text'>
               <p>Support: Chat With Us Now</p>
             </div>
             <div>
-              <FaWhatsapp className='bg-green-400 text-3xl rounded-full' />
+              <FaWhatsapp className='bg-green-400 text-3xl text-white p-1 rounded-full' />
             </div>
           </div>
         </div>
         <ScheduleModal />
         <SideBar />
-        <div className='relative overflow-x-hidden'>
+        <div className='relative overflow-x-hidden carousel_height'>
           <Carousel />
         </div>
         <div className='relative other-container  '>
@@ -67,8 +69,20 @@ export default function HomePAge() {
           <OurService />
           <div className={`talk_style`}>
             <div className={`${bannerRef ? 'in-view' : ''} msg`}>
-              We are coming to disrupt every level of mediocrity in the Real
-              Estate industry.
+              Live, Work & Play amidst Luxury & Nature
+              <div className='flex justify-center'>
+                Discover{' '} 
+                <span className='text-red-700 mx-2 hidden lg:block'>
+                  <Typewriter
+                    options={{
+                      strings: ['Openplanet', 'Peace', 'Openplanet', 'Comfort', 'Openplanet', 'Happiness'],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </span>
+                  <div className='lg:hidden mx-2 text-red-700'>Openplanet</div>
+              </div>
             </div>
           </div>
           <div className='relative'>

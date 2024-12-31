@@ -20,7 +20,7 @@ function About() {
           inView ? 'in-view' : ''
         }`}
       >
-        From the prestigious neighborhoods of Maitama to the dynamic landscapes
+        From the prestigious neighborhoods of Maitama through the dynamic landscapes
         of Abuja, OpenPlanet is redefining real estate with a bold vision. A
         vision rooted in intelligence, shaped by innovation, and driven by
         excellence; a vision that turns every &apos;Is it possible?&apos; into

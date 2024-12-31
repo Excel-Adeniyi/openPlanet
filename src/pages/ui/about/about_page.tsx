@@ -16,7 +16,7 @@ export default function AboutPage() {
 
       <div className='about-banner'>
         <Navbar />
-        <div className='flex items-stretch justify-center h-full overflow-hidden'>
+        <div className='flex items-stretch justify-center h-full text-white overflow-hidden'>
           <div className='self-center'>
             <div className='text-center introducing'>Who We Are</div>
             <div className='branding'>
@@ -42,7 +42,9 @@ export default function AboutPage() {
         </div>
       </div>
       <CoreValues />
-      <Team />
+      <div className=''>
+        <Team />
+      </div>
       <Footer />
     </div>
   );

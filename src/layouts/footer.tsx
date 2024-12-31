@@ -13,7 +13,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { Link } from 'react-router';
 export default function Footer() {
   return (
-    <footer className='footer-container w-screen'>
+    <footer className='footer-container w-screen text-white'>
       <div className='bg-slate-200'>
         <div className='p-24 border-r-2 text-black'>
           <div className='text-center text-2xl '>Follow Us</div>

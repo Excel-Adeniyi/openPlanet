@@ -1,6 +1,7 @@
 .team-container {
     background: linear-gradient(180deg, rgb(30, 30, 30), rgba(0, 0, 0, 0.901)), url('https://excel-adeniyi.github.io/planetImages/houses-5514892_1920.jpg');
-    /* height: 100vh; */
+    height: 100%;
+    width: 100vw;
 }
 
 .house_styles {
@@ -47,4 +48,25 @@
     height: 70vh;
     width: 92vh;
     border-top-right-radius: 25px;
+}
+
+.height-container{
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .service_carousels{
+        width: 100vw;
+        padding: 12px;
+        /* overflow-y: scroll; */
+        height: 100%;
+    }
+    .service_containers{
+        height: 100%;
+        width: 100vw;
+    }
+    .image-hie{
+        height: 200px;
+        width: 300px;
+    }
 }

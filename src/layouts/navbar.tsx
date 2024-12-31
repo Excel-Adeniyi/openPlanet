@@ -88,7 +88,7 @@ function Navbar() {
             </div>
           </div>
 
-          <div className='lg:hidden col-span-2 flex justify-end w-full items-stretch '>
+          <div className='lg:hidden col-span-2 flex justify-end w-full items-stretch  text-white'>
             <div
               className='self-center flex text-xl cursor-pointer'
               onClick={() => toggleBar()}

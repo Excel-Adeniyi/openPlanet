@@ -1,7 +1,7 @@
 import './styles/styles.css';
 export default function MoreInfo() {
   return (
-    <div className='more_info_style flex items-stretch justify-center relative'>
+    <div className='more_info_style flex items-stretch justify-center text-white relative'>
       <div className='text-ceter  self-center'>
         <h1 className='content1 my-10'>Revolutionizing</h1>
         <h1 className='content2 my-10'>Opulence</h1>
