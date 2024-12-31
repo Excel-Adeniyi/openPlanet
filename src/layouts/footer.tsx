@@ -12,6 +12,9 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { FaLocationDot } from 'react-icons/fa6';
 import { Link } from 'react-router';
 export default function Footer() {
+  const navto = (url: string) => {
+    window.location.href = `${url}`
+  }
   return (
     <footer className='footer-container w-screen text-white'>
       <div className='bg-slate-200'>
@@ -24,10 +27,10 @@ export default function Footer() {
             <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700'>
               <FaFacebook />
             </div>
-            <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700'>
+            <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.youtube.com/@OpenPlanet-o2n')}>
               <FaYoutube />
             </div>
-            <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700'>
+            <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.tiktok.com/@openplanet0')}>
               <AiFillTikTok />
             </div>
           </div>
