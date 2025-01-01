@@ -55,9 +55,9 @@ export default function HomePAge() {
             </div>
           </div>
         </div>
-        <ScheduleModal />
         <SideBar />
         <div className='relative other-container  '>
+        <ScheduleModal />
           <div className='relative overflow-x-hidden carousel_height'>
             <Carousel />
           </div>

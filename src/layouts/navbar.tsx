@@ -93,7 +93,7 @@ function Navbar() {
 
               <div className='justify-end flex'>
                 <button
-                  className='rounded-full nav-button'
+                  className='rounded-full text-white nav-button'
                   onClick={() => toggleModal()}
                 >
                   Shedule Appointment
