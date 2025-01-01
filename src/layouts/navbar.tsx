@@ -70,7 +70,7 @@ function Navbar() {
                       className={`mx-5 ${
                         pathname === '/team'
                           ? 'text-slate-200 tracking-wider'
-                          : 'text-slate-400 tracking-wider'
+                          : 'text-slate-400 hover:text-slate-300 focus:text-slate-300 tracking-wider'
                       }`}
                     >
                       Our Team
@@ -82,7 +82,7 @@ function Navbar() {
                       className={`mx-10 ${
                         pathname === '/contact'
                           ? 'text-slate-200 tracking-wider'
-                          : 'text-slate-400 tracking-wider'
+                          : 'text-slate-400  hover:text-slate-300 focus:text-slate-300 tracking-wider'
                       }`}
                     >
                       Contact
