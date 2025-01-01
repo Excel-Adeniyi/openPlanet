@@ -39,7 +39,7 @@
 }
 
 .the_clinton2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/IMG_4212.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -54,7 +54,7 @@
 }
 
 .the_clinton3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms4.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.859)), url('https://excel-adeniyi.github.io/planetImages/IMG_4211.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -76,7 +76,7 @@
 }
 
 .the_clinton2:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/IMG_4212.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     transform: scale(1.02);
@@ -84,7 +84,7 @@
 }
 
 .the_clinton3:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/7Bedrooms4.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(6, 21, 104, 0.817)), url('https://excel-adeniyi.github.io/planetImages/IMG_4211.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     transform: scale(1.02);
