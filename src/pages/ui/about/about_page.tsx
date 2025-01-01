@@ -1,7 +1,7 @@
 import { RiCustomerService2Fill } from 'react-icons/ri';
 import Footer from '../../../layouts/footer';
 import Navbar from '../../../layouts/navbar';
-import { AboutTopContent, Team } from '../../components/abouts';
+import { AboutTopContent } from '../../components/abouts';
 import { CoreValues } from '../../components/home';
 import './styles/styles.css';
 import { useNavigate } from 'react-router';
@@ -43,7 +43,7 @@ export default function AboutPage() {
       </div>
       <CoreValues />
       <div className=''>
-        <Team />
+        {/* <Team /> */}
       </div>
       <Footer />
     </div>

@@ -93,6 +93,7 @@ export default function Footer() {
               <p className='uppercase my-5'>Useful Link</p>
               <Link to={'/projects'}><p className='my-2 text-white'>Property</p></Link>
               <Link to={'/about'}><p className='my-2 text-white'>About</p></Link>
+              <Link to={'/team'}><p className='my-2 text-white'>Our Team</p></Link>
               <Link to={'/contact'}><p className='my-2 text-white'>Contact</p></Link>
             </div>
           </div>

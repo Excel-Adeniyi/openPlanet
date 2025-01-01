@@ -69,7 +69,7 @@ export default function HomePAge() {
           <OurService />
           <div className={`talk_style`}>
             <div className={`${bannerRef ? 'in-view' : ''} msg`}>
-              Live, Work & Play amidst Luxury & Nature
+              Live, Work & Play amidst Luxury & Nature;
               <div className='flex justify-center'>
                 Discover{' '} 
                 <span className='text-red-700 mx-2 hidden lg:block'>
@@ -88,7 +88,7 @@ export default function HomePAge() {
           <div className='relative'>
             <CoreValues />
             <CEO />
-            <OtherBusiness />
+            {/* <OtherBusiness /> */}
           </div>
           <MoreInfo />
           <Footer />

@@ -64,6 +64,18 @@ function Navbar() {
                   </li>
                   <li>
                     <Link
+                      to={'/team'}
+                      className={`mx-5 ${
+                        pathname === '/team'
+                          ? 'text-slate-200 tracking-wider'
+                          : 'text-slate-400 tracking-wider'
+                      }`}
+                    >
+                      Our Team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       to={'/contact'}
                       className={`mx-10 ${
                         pathname === '/contact'

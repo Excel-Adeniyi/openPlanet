@@ -14,6 +14,9 @@ export default function SideBar() {
   const {isOpen, toggleBar}:any = useSidebarStore()
   const {toggleModal}: any = useScheduleModal()
   const { pathname } = useLocation();
+  const navto = (url: string) => {
+    window.location.href = `${url}`
+  }
   return (
     <div className={`${isOpen ? 'show_sidebar' : ''} fixed h-full bg-slate-700 sidebar_container text-white `}>
       <div className='grid grid-cols-2'>
@@ -34,6 +37,7 @@ export default function SideBar() {
         <div className='my-4'><Link to={'/'} className={`text-white focus:text-red-400 ${pathname === '/' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Home</Link></div>
         <div className='my-4'><Link to={'/projects'} className={`text-white focus:text-red-400 ${pathname === '/projects' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Projects</Link></div>
         <div className='my-4'><Link to={'/about'} className={`text-white focus:text-red-400 ${pathname === '/about' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>About</Link></div>
+        <div className='my-4'><Link to={'/team'} className={`text-white focus:text-red-400 ${pathname === '/team' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Our Team</Link></div>
         <div className='my-4'><Link to={'/contact'} className={`text-white focus:text-red-400 ${pathname === '/contact' ? 'text-red-400' : 'text-white'}`} onClick={() => {toggleBar()}}>Contacts</Link></div>
         <div className='my-4 text-white focus:text-red-400 ' onClick={() => {toggleModal(), toggleBar()}} >Schedule Appointment</div>
       </div>
@@ -55,10 +59,10 @@ export default function SideBar() {
           <div className='p-4 text-xl hover:text-red-700 focus:text-red-700'>
             <FaFacebook />
           </div>
-          <div className='p-4 text-xl hover:text-red-700 focus:text-red-700'>
+          <div className='p-4 text-xl hover:text-red-700 focus:text-red-700'  onClick={() => navto('https://www.youtube.com/@OpenPlanet-o2n')}>
             <FaYoutube />
           </div>
-          <div className='p-4 text-xl hover:text-red-700 focus:text-red-700'>
+          <div className='p-4 text-xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.tiktok.com/@openplanet0')}>
             <AiFillTikTok />
           </div>
         </div>

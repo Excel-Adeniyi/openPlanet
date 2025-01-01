@@ -1,0 +1,19 @@
+.team-banner {
+    background: linear-gradient(180deg, rgba(42, 42, 42, 0.911), rgba(0, 0, 0, 0.445)), url('https://excel-adeniyi.github.io/planetImages/team-7278739_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.team-image_height{
+    height: 25vh;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .team-image_height{
+        height: 40vh;
+        width: 100%;
+    }
+}
