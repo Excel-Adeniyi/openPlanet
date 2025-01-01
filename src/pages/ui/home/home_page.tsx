@@ -13,7 +13,7 @@ import {
   OurService,
 } from '../../components/home';
 import MoreInfo from '../../components/home/more_info/more_info';
-import OtherBusiness from '../../components/home/other_business/business';
+// import OtherBusiness from '../../components/home/other_business/business';
 import './style/home_page.css';
 
 export default function HomePAge() {
@@ -27,11 +27,11 @@ export default function HomePAge() {
       <div className='grid lg:grid-rows-2 overflow-x-hidden home_container '>
         <div className='floating_button'>
           <div className='flex cursor-pointer' onClick={whatsappChat}>
-            <div className='bg-black text-white whatsapp_text'>
+            <div className='lg:bg-white lg:text-black lg:text-sm bg-black lg:my-4 font-sangbleu lg:px-2 text-white whatsapp_text'>
               <p>Support: Chat With Us Now</p>
             </div>
             <div>
-              <FaWhatsapp className='bg-green-400 text-3xl text-white p-1 rounded-full' />
+              <FaWhatsapp className='bg-green-400 lg:text-5xl text-3xl text-white p-1 rounded-full' />
             </div>
           </div>
         </div>
