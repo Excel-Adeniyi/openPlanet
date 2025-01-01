@@ -1,4 +1,4 @@
-import { GiEarthAfricaEurope } from 'react-icons/gi';
+// import { GiEarthAfricaEurope } from 'react-icons/gi';
 import './styles/navbar_style.css';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { RiMenu4Fill } from 'react-icons/ri';
@@ -14,13 +14,15 @@ function Navbar() {
       <nav className='lg:px-24 px-5 lg:py-8 py-4 w-screen'>
         <div className='grid grid-cols-3 gap-8 justify-items-start'>
           <div
-            className='logo_gradient flex items-stretch justify-self-start cursor-pointer'
+            className='logo_gradient cursor-pointer'
             onClick={() => navigate('/')}
           >
-            <div className='self-center'>
-              <GiEarthAfricaEurope className='icon-color' />
-            </div>
-            <div className='self-center'>penPlanet</div>
+            <img
+              src='https://excel-adeniyi.github.io/planetImages/logo_open.png'
+              width={100}
+              height={100}
+                className='logo_filters'
+            />
           </div>
           <div className='col-span-2 w-full lg:block hidden font-cormorant'>
             <div className='justify-between flex'>

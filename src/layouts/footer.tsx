@@ -7,14 +7,13 @@ import {
 } from 'react-icons/fa';
 import './styles/footer_style.css';
 import { AiFillTikTok } from 'react-icons/ai';
-import { GiEarthAfricaEurope } from 'react-icons/gi';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { FaLocationDot } from 'react-icons/fa6';
 import { Link } from 'react-router';
 export default function Footer() {
   const navto = (url: string) => {
-    window.location.href = `${url}`
-  }
+    window.location.href = `${url}`;
+  };
   return (
     <footer className='footer-container w-screen text-white'>
       <div className='bg-slate-200'>
@@ -27,10 +26,18 @@ export default function Footer() {
             <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700'>
               <FaFacebook />
             </div>
-            <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.youtube.com/@OpenPlanet-o2n')}>
+            <div
+              className='p-4 text-4xl hover:text-red-700 focus:text-red-700'
+              onClick={() => navto('https://www.youtube.com/@OpenPlanet-o2n')}
+            >
               <FaYoutube />
             </div>
-            <div className='p-4 text-4xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.tiktok.com/@openplanetproperties')}>
+            <div
+              className='p-4 text-4xl hover:text-red-700 focus:text-red-700'
+              onClick={() =>
+                navto('https://www.tiktok.com/@openplanetproperties')
+              }
+            >
               <AiFillTikTok />
             </div>
           </div>
@@ -40,10 +47,12 @@ export default function Footer() {
         <div className='grid lg:grid-cols-3 grid-cols-1 lg:gap-8 lg:px-24 px-5 pt-10 pb-4'>
           <div className='my-10'>
             <div className='logo_gradient flex items-stretch justify-self-start'>
-              <div className='self-center'>
-                <GiEarthAfricaEurope className='icon-color' />
-              </div>
-              <div>penPlanet</div>
+              <img
+                src='https://excel-adeniyi.github.io/planetImages/logo_open.png'
+                width={'150px'}
+                height={100}
+                className='logo_filter'
+              />
             </div>
             <div className='font-cormorantBold tracking-wide text-sm my-5 uppercase'>
               {' '}
@@ -53,11 +62,19 @@ export default function Footer() {
           <div className='grid grid-cols-2 gap-4 lg:hidden'>
             <div className=' flex justify-start  tracking-wider'>
               <div>
-              <p className='uppercase my-5'>Useful Link</p>
-              <Link to={'/projects'}><p className='my-2 text-sm text-white'>Property</p></Link>
-              <Link to={'/about'}><p className='my-2 text-sm text-white'>About</p></Link>
-              <Link to={'/team'}><p className='my-2 text-sm text-white'>Team</p></Link>
-              <Link to={'/contact'}><p className='my-2 text-sm text-white'>Contact</p></Link>
+                <p className='uppercase my-5'>Useful Link</p>
+                <Link to={'/projects'}>
+                  <p className='my-2 text-sm text-white'>Property</p>
+                </Link>
+                <Link to={'/about'}>
+                  <p className='my-2 text-sm text-white'>About</p>
+                </Link>
+                <Link to={'/team'}>
+                  <p className='my-2 text-sm text-white'>Team</p>
+                </Link>
+                <Link to={'/contact'}>
+                  <p className='my-2 text-sm text-white'>Contact</p>
+                </Link>
               </div>
             </div>
             <div className=' flex justify-start  tracking-wider'>
@@ -92,10 +109,18 @@ export default function Footer() {
           <div className=' flex justify-center lg:block hidden '>
             <div>
               <p className='uppercase my-5'>Useful Link</p>
-              <Link to={'/projects'}><p className='my-2 text-white'>Property</p></Link>
-              <Link to={'/about'}><p className='my-2 text-white'>About</p></Link>
-              <Link to={'/team'}><p className='my-2 text-white'>Our Team</p></Link>
-              <Link to={'/contact'}><p className='my-2 text-white'>Contact</p></Link>
+              <Link to={'/projects'}>
+                <p className='my-2 text-white'>Property</p>
+              </Link>
+              <Link to={'/about'}>
+                <p className='my-2 text-white'>About</p>
+              </Link>
+              <Link to={'/team'}>
+                <p className='my-2 text-white'>Our Team</p>
+              </Link>
+              <Link to={'/contact'}>
+                <p className='my-2 text-white'>Contact</p>
+              </Link>
             </div>
           </div>
           <div className=' flex justify-center lg:block hidden '>
