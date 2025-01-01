@@ -129,6 +129,7 @@ export default function ScheduleModal() {
                   onClick={() => {
                     handleSubmit();
                   }}
+                  className='bg-black'
                 >
                   Submit Appointment
                 </button>
