@@ -18,7 +18,7 @@
 .carousel.active {
     opacity: 1;
     transform: translateX(0);
-    z-index: 2;
+    z-index: 1;
 }
 
 .carousel:not(.active) {

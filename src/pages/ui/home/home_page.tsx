@@ -37,10 +37,10 @@ export default function HomePAge() {
         </div>
         <ScheduleModal />
         <SideBar />
-        <div className='relative overflow-x-hidden carousel_height'>
-          <Carousel />
-        </div>
         <div className='relative other-container  '>
+          <div className='relative overflow-x-hidden carousel_height'>
+            <Carousel />
+          </div>
           <About />
           <div className='circle_position lg:block hidden'>
             {' '}
@@ -71,17 +71,24 @@ export default function HomePAge() {
             <div className={`${bannerRef ? 'in-view' : ''} msg`}>
               Live, Work & Play amidst Luxury & Nature;
               <div className='flex justify-center'>
-                Discover{' '} 
+                Discover{' '}
                 <span className='text-red-700 mx-2 hidden lg:block'>
                   <Typewriter
                     options={{
-                      strings: ['Openplanet', 'Peace', 'Openplanet', 'Comfort', 'Openplanet', 'Happiness'],
+                      strings: [
+                        'Openplanet',
+                        'Peace',
+                        'Openplanet',
+                        'Comfort',
+                        'Openplanet',
+                        'Happiness',
+                      ],
                       autoStart: true,
                       loop: true,
                     }}
                   />
                 </span>
-                  <div className='lg:hidden mx-2 text-red-700'>Openplanet</div>
+                <div className='lg:hidden mx-2 text-red-700'>Openplanet</div>
               </div>
             </div>
           </div>
