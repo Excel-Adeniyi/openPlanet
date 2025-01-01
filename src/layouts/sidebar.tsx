@@ -62,7 +62,7 @@ export default function SideBar() {
           <div className='p-4 text-xl hover:text-red-700 focus:text-red-700'  onClick={() => navto('https://www.youtube.com/@OpenPlanet-o2n')}>
             <FaYoutube />
           </div>
-          <div className='p-4 text-xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.tiktok.com/@openplanet0')}>
+          <div className='p-4 text-xl hover:text-red-700 focus:text-red-700' onClick={() => navto('https://www.tiktok.com/@openplanetproperties')}>
             <AiFillTikTok />
           </div>
         </div>

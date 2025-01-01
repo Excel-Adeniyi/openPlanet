@@ -5,7 +5,7 @@ import team from '../../../data/team_data.json';
 import './style/style.css';
 import Footer from '../../../layouts/footer';
 
-export default function Team() {
+export default function OurTeam() {
   return (
     <div>
       <div className='team-banner'>
