@@ -44,7 +44,7 @@ function Navbar() {
                     <Link
                       to={'/projects'}
                       className={`mx-10 ${
-                        pathname === '/project'
+                        pathname === '/projects'
                           ? 'text-slate-200'
                           : 'text-slate-400 hover:text-slate-300 tracking-wider focus:text-slate-300'
                       }`}
@@ -82,7 +82,7 @@ function Navbar() {
                       className={`mx-10 ${
                         pathname === '/contact'
                           ? 'text-slate-200 tracking-wider'
-                          : 'text-slate-400  hover:text-slate-300 focus:text-slate-300 tracking-wider'
+                          : 'text-slate-400 hover:text-slate-300 focus:text-slate-300 tracking-wider'
                       }`}
                     >
                       Contact
