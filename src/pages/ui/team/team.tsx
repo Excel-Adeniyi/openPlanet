@@ -23,30 +23,57 @@ export default function Team() {
         </div>
       </div>
       <div className='bg-white'>
-        <div className='font-sangbleuBold tracking-wider text-center py-10 text-black uppercase text-3xl'>
-          Board Of Directors
-        </div>
         <div className='Lg:mx-24 lg:px-24 mx-4'>
-          <div className='grid lg:grid-cols-5 grid-cols-1 gap-8 text-center'>
-            {team.map((content: any, index: any) => (
-              <>
-                {content.image && (
-                  <div className='my-10'>
-                    <img
-                      key={index}
-                      src={content.image || '/default-image.png'}
-                      alt={content.name || 'Service Image'}
-                      className={` rounded-lg team-image_height`}
-                    />
-                    <h3 className='title-content mt-4 mb-3 text-2xl text-black'>{content.name}</h3>
-                    <h3 className='font-cormorant text-red-700 '>
-                      {content.position}
-                    </h3>
-                  </div>
-                )}
-              </>
-            ))}
-          </div>
+          {team.map((content: any, index: any) => (
+            <div key={index} className=''>
+              <div className='font-sangbleuBold tracking-wider text-center py-10 text-black uppercase text-3xl'>
+                Board Of Directors
+              </div>
+              <div className='grid lg:grid-cols-3 grid-cols-1 gap-8 text-center'>
+                {content.board.map((content: any, index: any) => {
+                  return (
+                    <div className='my-10 mx-10'>
+                      <img
+                        key={index}
+                        src={content.image || '/default-image.png'}
+                        alt={content.name || 'Service Image'}
+                        className={` rounded-lg team-image_height fit-content`}
+                      />
+                      <h3 className='title-content mt-4 mb-3 text-2xl text-black'>
+                        {content.name}
+                      </h3>
+                      <h3 className='font-cormorant text-red-700 '>
+                        {content.position}
+                      </h3>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className='font-sangbleuBold tracking-wider text-center py-10 text-black uppercase text-3xl'>
+              Management Team
+              </div>
+              <div className='grid lg:grid-cols-3 grid-cols-1 gap-8 text-center'>
+                {content.management.map((content: any, index: any) => {
+                  return (
+                    <div className='my-10 mx-10'>
+                      <img
+                        key={index}
+                        src={content.image || '/default-image.png'}
+                        alt={content.name || 'Service Image'}
+                        className={` rounded-lg team-image_height fit-content`}
+                      />
+                      <h3 className='title-content mt-4 mb-3 text-2xl text-black'>
+                        {content.name}
+                      </h3>
+                      <h3 className='font-cormorant text-red-700 '>
+                        {content.position}
+                      </h3>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <Footer />

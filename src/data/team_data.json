@@ -1,50 +1,57 @@
 [
     {
-        "name": "Adelodun Adejare",
-        "position": "MD/CEO",
-        "image": "https://excel-adeniyi.github.io/planetImages/Headshot1.JPG",
-        "description1": "Adelodun Adejare is the CEO/MD of Openplanet, a leader whose expertise and vision have been central to the company’s success. With a deep understanding of the industry, Adelodun has guided Openplanet to consistent growth, ensuring the company delivers innovative solutions and maintains client satisfaction.",
-        "desctiption2": "AAdelodun is committed to fostering a culture of integrity, teamwork, and open communication within the organization. His leadership style emphasizes collaboration and trust, creating an environment where every team member can thrive and contribute to the company’s goals.",
-        "description3": "Under Adelodun’s guidance, Openplanet has successfully completed numerous projects, earning the trust and loyalty of its clients. His dedication to continuous improvement and excellence ensures that Openplanet remains a reliable partner in delivering high-quality results."
-    },
-    {
-        "name": "JOHNSON KUSIMO",
-        "position": "General Manager, Customer Success",
-        "image": "https://excel-adeniyi.github.io/planetImages/johsoni.jpg",
-        "description1": "Johnson Kusimo is a highly reliable and proactive leader at OpenPlanet, committed to ensuring client satisfaction and project success. As the General Manager of Customer Success, Johnson plays a pivotal role in fostering strong client relationships, delivering tailored solutions, and maintaining OpenPlanet's reputation for excellence. His dedication to understanding client needs and aligning them with strategic objectives has been instrumental in driving customer satisfaction.",
-        "description2": "Johnson’s ability to manage diverse responsibilities, coupled with his problem-solving expertise, ensures the seamless execution of projects. His proactive approach to addressing challenges and exceeding expectations has earned the trust and admiration of both clients and colleagues. Johnson is known for his exceptional communication skills, which allow him to effectively bridge the gap between client needs and company deliverables.",
-        "description3": "Through his unwavering commitment and leadership, Johnson Kusimo has strengthened OpenPlanet’s client relationships and enhanced its standing in the industry. His passion for excellence and customer-focused mindset ensure that every project is completed with the highest level of professionalism, making him an invaluable asset to the team."
-    },
-    {
-        "name": "Faiza MT Liman",
-        "position": "",
-        "image": "",
-        "description1": "Faiza MT Liman is a vibrant and dedicated team member at Openplanet, whose contributions have been instrumental in the successful completion of numerous projects. With a strong focus on delivering exceptional results, Faiza consistently goes the extra mile to ensure clients are satisfied and project goals are achieved. Her dynamic approach to teamwork, coupled with her innovative thinking, has helped Openplanet exceed client expectations time and time again.",
-        "desctiption2": "Faiza's integrity and professionalism are key assets that enhance the company’s reputation. Her ability to collaborate effectively with colleagues, while maintaining a high standard of excellence, has been pivotal in building trust with clients. Whether managing complex tasks or providing creative solutions to challenges, Faiza has a proven track record of delivering work that not only meets but surpasses client demands.",
-        "description3": "By playing an active role in driving successful outcomes, Faiza has helped Openplanet strengthen its relationships with clients and maintain a high level of satisfaction. Her dedication and energy ensure that every project benefits from her unique perspective, making her a valued team member and a significant contributor to Openplanet's continued success."
-    },
-    {
-        "name": "Oloyede Mutiu",
-        "position": "General Manager, Operations",
-        "image": "https://excel-adeniyi.github.io/planetImages/oloyede.JPG",
-        "description1": "Oloyede Mutiu is a seasoned professional and a cornerstone of OpenPlanet’s operations team, bringing a wealth of experience and exceptional leadership skills to the organization. As the General Manager of Operations, he oversees the seamless execution of projects, ensuring that every aspect of the company's operational framework aligns with its mission and vision.",
-        "description2": "Mutiu’s ability to manage complex operations while fostering collaboration within teams has significantly enhanced OpenPlanet's performance. His focus on process optimization, resource management, and strategic planning ensures the company remains ahead in a competitive industry.",
-        "description3": "Under Mutiu's guidance, OpenPlanet has strengthened its client relationships and maintained a reputation for delivering on promises. His dedication to innovation and his unwavering professionalism make him an invaluable leader, ensuring that every project benefits from his expertise and vision."
-    },
-    {
-        "name": "Binta Kuraye",
-        "position": "Chair, Board of Directors",
-        "image": "https://excel-adeniyi.github.io/planetImages/binta.jpg",
-        "description1": "Binta Kuraye is a visionary leader and the Chair of the Board of Directors at OpenPlanet. With her strategic insight and commitment to excellence, she provides invaluable guidance to the organization, ensuring that its mission and vision are realized through innovative and impactful initiatives.",
-        "description2": "As the Chair, Binta plays a pivotal role in shaping the company’s direction and fostering a culture of collaboration and growth. Her dedication to achieving organizational goals, coupled with her ability to inspire and lead, has been instrumental in strengthening OpenPlanet’s reputation as a leader in the industry.",
-        "description3": "Binta Kuraye’s leadership and forward-thinking approach have helped OpenPlanet build lasting relationships with clients and stakeholders. Her unwavering commitment to excellence continues to drive the company toward greater success and sustainable growth."
-      },      
-      {
-        "name": "Oluwaseye Gabriel",
-        "position": "Director of Technical Operations",
-        "image": "https://excel-adeniyi.github.io/planetImages/oluwaseye.jpg",
-        "description1": "Oluwaseye Gabriel is a seasoned professional and the driving force behind OpenPlanet’s technical operations. With extensive expertise in technical management, he leads the team to ensure that all projects are executed with precision, utilizing the latest technologies to deliver exceptional results. His strategic approach and technical insight have been pivotal in maintaining the company’s competitive edge in the industry.",
-        "description2": "Oluwaseye’s strong leadership and problem-solving skills ensure that technical challenges are met with innovative solutions. His ability to manage complex technical operations, coupled with his focus on continuous improvement, has allowed OpenPlanet to streamline processes and enhance operational efficiency, leading to successful project completions across the board.",
-        "description3": "As Director of Technical Operations, Oluwaseye Gabriel plays a key role in shaping OpenPlanet’s vision for technological excellence. His commitment to driving innovation and maintaining high standards of quality ensures that every project not only meets but exceeds client expectations, making him a critical part of OpenPlanet's ongoing success."
-      }      
+        "board": [
+        
+            {
+                "name": "Binta Kuraye",
+                "position": "Chair, Board of Directors",
+                "image": "https://excel-adeniyi.github.io/planetImages/binta.jpg",
+                "description1": "Binta Kuraye is a visionary leader and the Chair of the Board of Directors at OpenPlanet. With her strategic insight and commitment to excellence, she provides invaluable guidance to the organization, ensuring that its mission and vision are realized through innovative and impactful initiatives.",
+                "description2": "As the Chair, Binta plays a pivotal role in shaping the company’s direction and fostering a culture of collaboration and growth. Her dedication to achieving organizational goals, coupled with her ability to inspire and lead, has been instrumental in strengthening OpenPlanet’s reputation as a leader in the industry.",
+                "description3": "Binta Kuraye’s leadership and forward-thinking approach have helped OpenPlanet build lasting relationships with clients and stakeholders. Her unwavering commitment to excellence continues to drive the company toward greater success and sustainable growth."
+            },
+            {
+                "name": "Adelodun Adejare",
+                "position": "Executive Director",
+                "image": "https://excel-adeniyi.github.io/planetImages/Headshot1.JPG",
+                "description1": "Adelodun Adejare is the CEO/MD of Openplanet, a leader whose expertise and vision have been central to the company’s success. With a deep understanding of the industry, Adelodun has guided Openplanet to consistent growth, ensuring the company delivers innovative solutions and maintains client satisfaction.",
+                "desctiption2": "AAdelodun is committed to fostering a culture of integrity, teamwork, and open communication within the organization. His leadership style emphasizes collaboration and trust, creating an environment where every team member can thrive and contribute to the company’s goals.",
+                "description3": "Under Adelodun’s guidance, Openplanet has successfully completed numerous projects, earning the trust and loyalty of its clients. His dedication to continuous improvement and excellence ensures that Openplanet remains a reliable partner in delivering high-quality results."
+            },
+            {
+                "name": "Oluwaseye Gabriel",
+                "position": "⁠Non Executive Director",
+                "image": "https://excel-adeniyi.github.io/planetImages/oluwaseye.jpg",
+                "description1": "Oluwaseye Gabriel is a seasoned professional and the driving force behind OpenPlanet’s technical operations. With extensive expertise in technical management, he leads the team to ensure that all projects are executed with precision, utilizing the latest technologies to deliver exceptional results. His strategic approach and technical insight have been pivotal in maintaining the company’s competitive edge in the industry.",
+                "description2": "Oluwaseye’s strong leadership and problem-solving skills ensure that technical challenges are met with innovative solutions. His ability to manage complex technical operations, coupled with his focus on continuous improvement, has allowed OpenPlanet to streamline processes and enhance operational efficiency, leading to successful project completions across the board.",
+                "description3": "As Director of Technical Operations, Oluwaseye Gabriel plays a key role in shaping OpenPlanet’s vision for technological excellence. His commitment to driving innovation and maintaining high standards of quality ensures that every project not only meets but exceeds client expectations, making him a critical part of OpenPlanet's ongoing success."
+            }
+        ],
+        "management": [
+            {
+                "name": "Adelodun Adejare",
+                "position": "MD/CEO",
+                "image": "https://excel-adeniyi.github.io/planetImages/Headshot1.JPG",
+                "description1": "Adelodun Adejare is the CEO/MD of Openplanet, a leader whose expertise and vision have been central to the company’s success. With a deep understanding of the industry, Adelodun has guided Openplanet to consistent growth, ensuring the company delivers innovative solutions and maintains client satisfaction.",
+                "desctiption2": "AAdelodun is committed to fostering a culture of integrity, teamwork, and open communication within the organization. His leadership style emphasizes collaboration and trust, creating an environment where every team member can thrive and contribute to the company’s goals.",
+                "description3": "Under Adelodun’s guidance, Openplanet has successfully completed numerous projects, earning the trust and loyalty of its clients. His dedication to continuous improvement and excellence ensures that Openplanet remains a reliable partner in delivering high-quality results."
+            },
+            {
+                "name": "JOHNSON KUSIMO",
+                "position": "General Manager, Customer Success",
+                "image": "https://excel-adeniyi.github.io/planetImages/johsoni.jpg",
+                "description1": "Johnson Kusimo is a highly reliable and proactive leader at OpenPlanet, committed to ensuring client satisfaction and project success. As the General Manager of Customer Success, Johnson plays a pivotal role in fostering strong client relationships, delivering tailored solutions, and maintaining OpenPlanet's reputation for excellence. His dedication to understanding client needs and aligning them with strategic objectives has been instrumental in driving customer satisfaction.",
+                "description2": "Johnson’s ability to manage diverse responsibilities, coupled with his problem-solving expertise, ensures the seamless execution of projects. His proactive approach to addressing challenges and exceeding expectations has earned the trust and admiration of both clients and colleagues. Johnson is known for his exceptional communication skills, which allow him to effectively bridge the gap between client needs and company deliverables.",
+                "description3": "Through his unwavering commitment and leadership, Johnson Kusimo has strengthened OpenPlanet’s client relationships and enhanced its standing in the industry. His passion for excellence and customer-focused mindset ensure that every project is completed with the highest level of professionalism, making him an invaluable asset to the team."
+            },
+            {
+                "name": "Oloyede Mutiu",
+                "position": "General Manager, Operations",
+                "image": "https://excel-adeniyi.github.io/planetImages/oloyede.JPG",
+                "description1": "Oloyede Mutiu is a seasoned professional and a cornerstone of OpenPlanet’s operations team, bringing a wealth of experience and exceptional leadership skills to the organization. As the General Manager of Operations, he oversees the seamless execution of projects, ensuring that every aspect of the company's operational framework aligns with its mission and vision.",
+                "description2": "Mutiu’s ability to manage complex operations while fostering collaboration within teams has significantly enhanced OpenPlanet's performance. His focus on process optimization, resource management, and strategic planning ensures the company remains ahead in a competitive industry.",
+                "description3": "Under Mutiu's guidance, OpenPlanet has strengthened its client relationships and maintained a reputation for delivering on promises. His dedication to innovation and his unwavering professionalism make him an invaluable leader, ensuring that every project benefits from his expertise and vision."
+            }
+        ]
+    }
 ]
