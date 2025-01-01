@@ -7,10 +7,31 @@ import './styles/styles.css';
 import { useNavigate } from 'react-router';
 import SideBar from '../../../layouts/sidebar';
 import ScheduleModal from '../../../global/modal/schedule_modal';
+import { Helmet } from 'react-helmet-async';
 export default function AboutPage() {
   const navigate = useNavigate();
   return (
     <div className='bg-white'>
+      <Helmet>
+        <title>About - OpenPlanet</title>
+        <link rel='canonical' href='https://openplanet.ng/about' />
+        <meta
+          name='description'
+          content='Learn more about OpenPlanet, your trusted platform for immersive real estate experiences. Discover our mission, vision, and commitment to redefining real estate services.'
+        />
+        <meta property='og:title' content='About - OpenPlanet' />
+        <meta
+          property='og:description'
+          content='Discover the story behind OpenPlanet and how we’re transforming real estate. Learn about our values, mission, and dedication to delivering exceptional service.'
+        />
+        <meta property='og:url' content='https://openplanet.ng/about' />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:image'
+          content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
+        />
+      </Helmet>
+
       <SideBar />
       <ScheduleModal />
 
@@ -42,9 +63,7 @@ export default function AboutPage() {
         </div>
       </div>
       <CoreValues />
-      <div className=''>
-        {/* <Team /> */}
-      </div>
+      <div className=''>{/* <Team /> */}</div>
       <Footer />
     </div>
   );

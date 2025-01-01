@@ -7,6 +7,7 @@ import Modal from '../../components/projects/modal/modal';
 import { useState } from 'react';
 import ScheduleModal from '../../../global/modal/schedule_modal';
 import SideBar from '../../../layouts/sidebar';
+import { Helmet } from 'react-helmet-async';
 export default function ProjectPage() {
   const [current, setCurrent] = useState<any>();
   const [showModal, setShowModal] = useState(false);
@@ -16,6 +17,25 @@ export default function ProjectPage() {
 
   return (
     <div className='bg-white'>
+      <Helmet>
+        <title>Projects - OpenPlanet</title>
+        <link rel='canonical' href='https://openplanet.ng/projects' />
+        <meta
+          name='description'
+          content='Discover the projects shaping the future of real estate on OpenPlanet. Explore stunning developments, unique opportunities, and innovative solutions tailored to your needs.'
+        />
+        <meta property='og:title' content='Projects - OpenPlanet' />
+        <meta
+          property='og:description'
+          content='Explore the latest real estate projects on OpenPlanet. From stunning homes to innovative developments, find your perfect opportunity today.'
+        />
+        <meta property='og:url' content='https://openplanet.ng/projects' />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:image'
+          content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
+        />
+      </Helmet>
       <ScheduleModal />
       <SideBar />
       {current && showModal && (
@@ -43,13 +63,14 @@ export default function ProjectPage() {
                     <div className='font-sangbleu text-xl'>{content.name}</div>
                     <div className='flex '>
                       <FaLocationDot className='my-1 mr-2' />
-                      <div className='tracking-wider font-cormorant'>{content.location} </div>
+                      <div className='tracking-wider font-cormorant'>
+                        {content.location}{' '}
+                      </div>
                     </div>
                     <button
                       className='bg-transparent border-slate-300 py-2 hover:bg-white hover:text-black my-2'
                       onClick={() => {
                         setCurrent(content), setShowModal(true);
-                     
                       }}
                     >
                       Details

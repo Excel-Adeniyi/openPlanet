@@ -15,6 +15,7 @@ import {
 import MoreInfo from '../../components/home/more_info/more_info';
 // import OtherBusiness from '../../components/home/other_business/business';
 import './style/home_page.css';
+import { Helmet } from 'react-helmet-async';
 
 export default function HomePAge() {
   const { bannerRef } = useInteractor();
@@ -25,6 +26,25 @@ export default function HomePAge() {
   return (
     <>
       <div className='grid lg:grid-rows-2 overflow-x-hidden home_container '>
+        <Helmet>
+          <title>Home Page - Openplanet</title>
+          <link rel='conical' href='https://openplanet.ng' />
+          <meta
+            name='description'
+            content='OpenPlanet – your ultimate platform for immersive real estate experiences. Explore stunning homes, unique properties, and personalized services to find your perfect match. Begin your journey with OpenPlanet today!'
+          />
+          <meta property='og:title' content='Home Page - OpenPlanet' />
+          <meta
+            property='og:description'
+            content='Explore stunning homes, unique properties, and personalized services with OpenPlanet, your trusted real estate platform.'
+          />
+          <meta property='og:url' content='https://openplanet.ng' />
+          <meta property='og:type' content='website' />
+          <meta
+            property='og:image'
+            content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
+          />
+        </Helmet>
         <div className='floating_button'>
           <div className='flex cursor-pointer' onClick={whatsappChat}>
             <div className='lg:bg-white lg:text-black lg:text-sm bg-black lg:my-4 font-sangbleu lg:px-2 text-white whatsapp_text'>

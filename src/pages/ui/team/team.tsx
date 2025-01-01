@@ -4,10 +4,31 @@ import SideBar from '../../../layouts/sidebar';
 import team from '../../../data/team_data.json';
 import './style/style.css';
 import Footer from '../../../layouts/footer';
+import { Helmet } from 'react-helmet-async';
 
 export default function OurTeam() {
   return (
     <div>
+      <Helmet>
+        <title>Team - OpenPlanet</title>
+        <link rel='canonical' href='https://openplanet.ng/team' />
+        <meta
+          name='description'
+          content='Meet the exceptional team behind OpenPlanet. Learn about the experts who drive innovation and deliver top-notch real estate services.'
+        />
+        <meta property='og:title' content='Team - OpenPlanet' />
+        <meta
+          property='og:description'
+          content='Discover the professionals at OpenPlanet who are redefining real estate. Get to know the people committed to helping you find your dream property.'
+        />
+        <meta property='og:url' content='https://openplanet.ng/team' />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:image'
+          content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
+        />
+      </Helmet>
+
       <div className='team-banner'>
         <SideBar />
         <ScheduleModal />
@@ -50,7 +71,7 @@ export default function OurTeam() {
                 })}
               </div>
               <div className='font-sangbleuBold tracking-wider text-center py-10 text-black uppercase text-3xl'>
-              Management Team
+                Management Team
               </div>
               <div className='grid lg:grid-cols-3 grid-cols-1 gap-8 text-center'>
                 {content.management.map((content: any, index: any) => {
