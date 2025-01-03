@@ -27,16 +27,22 @@ export default function HomePAge() {
     <>
       <div className='grid lg:grid-rows-2 overflow-x-hidden home_container '>
         <Helmet>
-          <title>Home Page - Openplanet</title>
+          <title>Explore Top Real Estate in Nigeria Today | OpenPlanet</title>
+          <link rel='icon' type='image/svg+xml' href='public/icon.png' />
           <link rel='conical' href='https://openplanet.ng' />
+          <link rel='alternate' href='https://openplanet.ng' hrefLang='en-ng'/>
+          <link rel='alternate' href='https://openplanet.ng' hrefLang='en-us'/>
+          <link rel='alternate' href='https://openplanet.ng' hrefLang='en-gb'/>
+          <link rel='alternate' href='https://openplanet.ng' hrefLang='x-default'/>
           <meta
             name='description'
-            content='OpenPlanet – your ultimate platform for immersive real estate experiences. Explore stunning homes, unique properties, and personalized services to find your perfect match. Begin your journey with OpenPlanet today!'
+            content='Find your dream home in Nigeria with OpenPlanet. Explore stunning properties, affordable real estate, and personalized services tailored for Nigerians. Start today!'
           />
-          <meta property='og:title' content='Home Page - OpenPlanet' />
+
+          <meta property='og:title' content='Explore Top Real Estate in Nigeria Today | OpenPlanet' />
           <meta
             property='og:description'
-            content='Explore stunning homes, unique properties, and personalized services with OpenPlanet, your trusted real estate platform.'
+            content='Find your dream home in Nigeria with OpenPlanet. Explore stunning properties, affordable real estate, and personalized services tailored for Nigerians. Start today!.'
           />
           <meta property='og:url' content='https://openplanet.ng' />
           <meta property='og:type' content='website' />
@@ -44,6 +50,36 @@ export default function HomePAge() {
             property='og:image'
             content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
           />
+                  <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "HomePage",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://openplanet.ng"
+            },
+            "headline": "Explore Top Real Estate in Nigeria Today | OpenPlanet",
+            "description": "Find your dream home in Nigeria with OpenPlanet. Explore stunning properties, affordable real estate, and personalized services tailored for Nigerians. Start today!.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Openplanet",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://excel-adeniyi.github.io/planetImages/logo_open.png"
+              }
+            },
+            "image": "https://excel-adeniyi.github.io/planetImages/logo_open.png",
+            "url": "https://openplanet.ng",
+            "author": {
+              "@type": "Organization",
+              "name": "Openplanet"
+            },
+            "datePublished": "2025-01-02",
+            "dateModified": "2025-01-02"
+          }
+          `}
+        </script>
         </Helmet>
         <div className='floating_button'>
           <div className='flex cursor-pointer' onClick={whatsappChat}>
@@ -57,7 +93,7 @@ export default function HomePAge() {
         </div>
         <SideBar />
         <div className='relative other-container  '>
-        <ScheduleModal />
+          <ScheduleModal />
           <div className='relative overflow-x-hidden carousel_height'>
             <Carousel />
           </div>

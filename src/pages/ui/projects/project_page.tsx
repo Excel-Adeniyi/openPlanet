@@ -18,16 +18,41 @@ export default function ProjectPage() {
   return (
     <div className='bg-white'>
       <Helmet>
-        <title>Projects - OpenPlanet</title>
+        <title>
+          Openplanet Real Estate Projects: Innovative Developments in Nigeria
+        </title>
         <link rel='canonical' href='https://openplanet.ng/projects' />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/projects'
+          hrefLang='en-ng'
+        />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/projects'
+          hrefLang='en-us'
+        />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/projects'
+          hrefLang='en-gb'
+        />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/projects'
+          hrefLang='x-default'
+        />
         <meta
           name='description'
-          content='Discover the projects shaping the future of real estate on OpenPlanet. Explore stunning developments, unique opportunities, and innovative solutions tailored to your needs.'
+          content='Explore Openplanet’s latest real estate projects in Nigeria. From cutting-edge residential developments to commercial innovations, discover opportunities that are shaping the future.'
         />
-        <meta property='og:title' content='Projects - OpenPlanet' />
+        <meta
+          property='og:title'
+          content='Openplanet Real Estate Projects: Innovative Developments in Nigeria'
+        />
         <meta
           property='og:description'
-          content='Explore the latest real estate projects on OpenPlanet. From stunning homes to innovative developments, find your perfect opportunity today.'
+          content='Explore the latest real estate projects on Openplanet. From stunning homes to innovative developments, find your perfect opportunity today.'
         />
         <meta property='og:url' content='https://openplanet.ng/projects' />
         <meta property='og:type' content='website' />
@@ -35,7 +60,38 @@ export default function ProjectPage() {
           property='og:image'
           content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
         />
+        <script type='application/ld+json'>
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://openplanet.ng/projects"
+      },
+      "headline": "Openplanet Real Estate Projects: Innovative Developments in Nigeria",
+      "description": "Explore Openplanet’s latest real estate projects in Nigeria. From cutting-edge residential developments to commercial innovations, discover opportunities that are shaping the future.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Openplanet",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://excel-adeniyi.github.io/planetImages/logo_open.png"
+        }
+      },
+      "image": "https://excel-adeniyi.github.io/planetImages/logo_open.png",
+      "url": "https://openplanet.ng/projects",
+      "author": {
+        "@type": "Organization",
+        "name": "Openplanet"
+      },
+      "datePublished": "2025-01-02",
+      "dateModified": "2025-01-02"
+    }
+    `}
+        </script>
       </Helmet>
+
       <ScheduleModal />
       <SideBar />
       {current && showModal && (

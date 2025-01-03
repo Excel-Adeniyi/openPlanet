@@ -10,16 +10,39 @@ export default function OurTeam() {
   return (
     <div>
       <Helmet>
-        <title>Team - OpenPlanet</title>
+        <title>Meet Our Team: Experts Behind Openplanet's Success</title>
         <link rel='canonical' href='https://openplanet.ng/team' />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/team'
+          hrefLang='en-ng'
+        />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/team'
+          hrefLang='en-us'
+        />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/team'
+          hrefLang='en-gb'
+        />
+        <link
+          rel='alternate'
+          href='https://openplanet.ng/team'
+          hrefLang='x-default'
+        />
         <meta
           name='description'
-          content='Meet the exceptional team behind OpenPlanet. Learn about the experts who drive innovation and deliver top-notch real estate services.'
+          content='Meet the exceptional team behind Openplanet, who drive real estate innovation and provide personalized services. Learn more about our professionals committed to delivering outstanding real estate solutions.'
         />
-        <meta property='og:title' content='Team - OpenPlanet' />
+        <meta
+          property='og:title'
+          content="Meet Our Team: Experts Behind Openplanet's Success"
+        />
         <meta
           property='og:description'
-          content='Discover the professionals at OpenPlanet who are redefining real estate. Get to know the people committed to helping you find your dream property.'
+          content='Discover the talented professionals at Openplanet. Get to know the dedicated team that is transforming real estate services and making your dreams a reality.'
         />
         <meta property='og:url' content='https://openplanet.ng/team' />
         <meta property='og:type' content='website' />
@@ -27,6 +50,36 @@ export default function OurTeam() {
           property='og:image'
           content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
         />
+        <script type='application/ld+json'>
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://openplanet.ng/team"
+      },
+      "headline": "Meet Our Team: Experts Behind Openplanet's Success",
+      "description": "Meet the exceptional team behind Openplanet, who drive real estate innovation and provide personalized services. Learn more about our professionals committed to delivering outstanding real estate solutions.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Openplanet",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://excel-adeniyi.github.io/planetImages/logo_open.png"
+        }
+      },
+      "image": "https://excel-adeniyi.github.io/planetImages/logo_open.png",
+      "url": "https://openplanet.ng/team",
+      "author": {
+        "@type": "Organization",
+        "name": "Openplanet"
+      },
+      "datePublished": "2025-01-02",
+      "dateModified": "2025-01-02"
+    }
+    `}
+        </script>
       </Helmet>
 
       <div className='team-banner'>

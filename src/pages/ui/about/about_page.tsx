@@ -13,16 +13,20 @@ export default function AboutPage() {
   return (
     <div className='bg-white'>
       <Helmet>
-        <title>About - OpenPlanet</title>
+        <title>About Openplanet: Real Estates Experts in Nigeria</title>
         <link rel='canonical' href='https://openplanet.ng/about' />
+        <link rel='alternate' href='https://openplanet.ng/about' hrefLang='en-ng'/>
+        <link rel='alternate' href='https://openplanet.ng/about' hrefLang='en-us'/>
+        <link rel='alternate' href='https://openplanet.ng/about' hrefLang='en-gb'/>
+        <link rel='alternate' href='https://openplanet.ng/about' hrefLang='x-default'/>
         <meta
           name='description'
-          content='Learn more about OpenPlanet, your trusted platform for immersive real estate experiences. Discover our mission, vision, and commitment to redefining real estate services.'
+          content='Learn more about Openplanet, your trusted Nigerian platform for immersive real estate experiences. Discover our mission, vision, and commitment to redefining real estate services in Nigeria.'
         />
-        <meta property='og:title' content='About - OpenPlanet' />
+        <meta property='og:title' content='About Openplanet: Real Estates Experts in Nigeria' />
         <meta
           property='og:description'
-          content='Discover the story behind OpenPlanet and how we’re transforming real estate. Learn about our values, mission, and dedication to delivering exceptional service.'
+          content='Discover the story behind Openplanet and how we’re transforming real estate in Nigeria. Learn about our values, mission, and dedication to delivering exceptional service.'
         />
         <meta property='og:url' content='https://openplanet.ng/about' />
         <meta property='og:type' content='website' />
@@ -30,6 +34,36 @@ export default function AboutPage() {
           property='og:image'
           content='https://excel-adeniyi.github.io/planetImages/logo_open.png'
         />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://openplanet.ng/about"
+            },
+            "headline": "About Openplanet: Real Estates Experts in Nigeria",
+            "description": "Learn more about Openplanet, your trusted Nigerian platform for immersive real estate experiences.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Openplanet",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://excel-adeniyi.github.io/planetImages/logo_open.png"
+              }
+            },
+            "image": "https://excel-adeniyi.github.io/planetImages/logo_open.png",
+            "url": "https://openplanet.ng/about",
+            "author": {
+              "@type": "Organization",
+              "name": "Openplanet"
+            },
+            "datePublished": "2025-01-02",
+            "dateModified": "2025-01-02"
+          }
+          `}
+        </script>
       </Helmet>
 
       <SideBar />
@@ -39,7 +73,7 @@ export default function AboutPage() {
         <Navbar />
         <div className='flex items-stretch justify-center h-full text-white overflow-hidden'>
           <div className='self-center'>
-            <div className='text-center introducing'>Who We Are</div>
+            <h2 className='text-center introducing'>Who We Are</h2>
             <div className='branding'>
               Luxury Living, Serenity & Unrivalled Quality
             </div>
