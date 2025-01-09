@@ -29,11 +29,11 @@ export default function HomePAge() {
         <Helmet>
           <title>Explore Top Real Estate in Nigeria Today | OpenPlanet</title>
           <link rel='icon' type='image/svg+xml' href='public/icon.png' />
-          <link rel='conical' href='https://openplanet.ng' />
-          <link rel='alternate' href='https://openplanet.ng' hrefLang='en-ng'/>
-          <link rel='alternate' href='https://openplanet.ng' hrefLang='en-us'/>
-          <link rel='alternate' href='https://openplanet.ng' hrefLang='en-gb'/>
-          <link rel='alternate' href='https://openplanet.ng' hrefLang='x-default'/>
+          <link rel='conical' href='https://openplanet.ng/' />
+          <link rel='alternate' href='https://openplanet.ng/' hrefLang='en-ng'/>
+          <link rel='alternate' href='https://openplanet.ng/' hrefLang='en-us'/>
+          <link rel='alternate' href='https://openplanet.ng/' hrefLang='en-gb'/>
+          <link rel='alternate' href='https://openplanet.ng/' hrefLang='x-default'/>
           <meta
             name='description'
             content='Find your dream home in Nigeria with OpenPlanet. Explore stunning properties, affordable real estate, and personalized services tailored for Nigerians. Start today!'
@@ -44,7 +44,7 @@ export default function HomePAge() {
             property='og:description'
             content='Find your dream home in Nigeria with OpenPlanet. Explore stunning properties, affordable real estate, and personalized services tailored for Nigerians. Start today!.'
           />
-          <meta property='og:url' content='https://openplanet.ng' />
+          <meta property='og:url' content='https://openplanet.ng/' />
           <meta property='og:type' content='website' />
           <meta
             property='og:image'
@@ -57,7 +57,7 @@ export default function HomePAge() {
             "@type": "HomePage",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://openplanet.ng"
+              "@id": "https://openplanet.ng/"
             },
             "headline": "Explore Top Real Estate in Nigeria Today | OpenPlanet",
             "description": "Find your dream home in Nigeria with OpenPlanet. Explore stunning properties, affordable real estate, and personalized services tailored for Nigerians. Start today!.",
@@ -70,7 +70,7 @@ export default function HomePAge() {
               }
             },
             "image": "https://excel-adeniyi.github.io/planetImages/logo_open.png",
-            "url": "https://openplanet.ng",
+            "url": "https://openplanet.ng/",
             "author": {
               "@type": "Organization",
               "name": "Openplanet"
